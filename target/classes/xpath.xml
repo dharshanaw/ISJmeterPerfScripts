@@ -1,0 +1,20 @@
+<result>
+    <row>
+        <sentinel_cache_tbl_pk>31</sentinel_cache_tbl_pk>
+        <batch_no>16</batch_no>
+        <sentinel_num>1094472</sentinel_num>
+        <ici_exp>2020-04-22+05:30</ici_exp>
+        <lu_ind_exp>2020-04-22+05:30</lu_ind_exp>
+        <lo_ind_exp xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+        <dlr_ind_exp xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+    </row>
+    <row>
+        <sentinel_cache_tbl_pk>33</sentinel_cache_tbl_pk>
+        <batch_no>17</batch_no>
+        <sentinel_num>1094472</sentinel_num>
+        <ici_exp>2020-04-22+05:30</ici_exp>
+        <lu_ind_exp>2020-04-22+05:30</lu_ind_exp>
+        <lo_ind_exp xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+        <dlr_ind_exp xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+    </row>
+</result>
