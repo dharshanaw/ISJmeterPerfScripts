@@ -30,7 +30,7 @@
                 </executions>
                 <configuration>
                     <testFilesIncluded>
-                        <jMeterTestFile>SCIM-User-Add.jmx</jMeterTestFile>
+                        <jMeterTestFile>RemoteUserStoreManager-AuthenticateUser.jmx</jMeterTestFile>
                     </testFilesIncluded>
                 </configuration>
             </plugin>
