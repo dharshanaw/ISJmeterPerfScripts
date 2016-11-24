@@ -32,6 +32,7 @@
                     <testFilesIncluded>
                         <jMeterTestFile>RemoteUserStoreManager-AuthenticateUser.jmx</jMeterTestFile>
                     </testFilesIncluded>
+                    <resultsFileFormat>csv</resultsFileFormat>
                 </configuration>
             </plugin>
         </plugins>
