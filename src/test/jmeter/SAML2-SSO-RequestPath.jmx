@@ -29,17 +29,17 @@
           </elementProp>
           <elementProp name="loop_count_login" elementType="Argument">
             <stringProp name="Argument.name">loop_count_login</stringProp>
-            <stringProp name="Argument.value">1000</stringProp>
+            <stringProp name="Argument.value">300</stringProp>
             <stringProp name="Argument.metadata">=</stringProp>
           </elementProp>
           <elementProp name="user_count" elementType="Argument">
             <stringProp name="Argument.name">user_count</stringProp>
-            <stringProp name="Argument.value">50</stringProp>
+            <stringProp name="Argument.value">70</stringProp>
             <stringProp name="Argument.metadata">=</stringProp>
           </elementProp>
           <elementProp name="loop_count" elementType="Argument">
             <stringProp name="Argument.name">loop_count</stringProp>
-            <stringProp name="Argument.value">20000</stringProp>
+            <stringProp name="Argument.value">100</stringProp>
             <stringProp name="Argument.metadata">=</stringProp>
           </elementProp>
           <elementProp name="user_start_index" elementType="Argument">
@@ -54,7 +54,7 @@
           </elementProp>
           <elementProp name="idp_host" elementType="Argument">
             <stringProp name="Argument.name">idp_host</stringProp>
-            <stringProp name="Argument.value">192.168.57.69</stringProp>
+            <stringProp name="Argument.value">192.168.57.198</stringProp>
             <stringProp name="Argument.metadata">=</stringProp>
           </elementProp>
           <elementProp name="idp_port" elementType="Argument">
@@ -336,7 +336,7 @@ byte[] encryptedUid = Base64.encodeBase64(credentilas.getBytes());
             <collectionProp name="Arguments.arguments">
               <elementProp name="SAMLRequest" elementType="HTTPArgument">
                 <boolProp name="HTTPArgument.always_encode">false</boolProp>
-                <stringProp name="Argument.value">nZPdjtowEIVfJfJ9frssYBFWFLQq0raiwPaid15nABfHk3ocYN9%2BnWRpUdUi1KtI9vjMmfNNRg%2BnUgcHsKTQ5CyNEhaAkVgos83Z8%2FoxHLCH8YhEqSs%2Bqd3OLOFnDeQC%2F84Qby9yVlvDUZAibkQJxJ3kq8nnJ55FCa8sOpSoWTAhAut8oykaqkuwK7AHJeF5%2BZSznXMVj%2BN0mEXp%2FSDq9aN0kPBBMkhiZ8UBNErlXiOJZbzDEqIfVLFg5p0oI1xrvlEgL3EkzEJvZXh39yFuDBIhCx7RSmgnyNlGaAIWzGc52wshqr3UhdKV2ZYod0oVL3rffLcgDe6kBtTSV9NCEKkD%2FH5PVMPckBPG5SxL0l6YJmHaWyd9ntzzzI%2FQH35nweI9gY%2FKdLlei%2BulKyL%2Bab1ehEsolAXpWPDtzMgXsTOR1oG9nYU4E2DjP0IdxZeKnX5W8S9eYj5boFby9aJNdjtzrfE4tSCcz83ZGloSpXDXBZoTVYSbtpRXzezkwPgcVovG09daaLVRYHPWOWbxL8%2FvGwpFS9vvmoOT%2By%2FzUywrYRU1scNJeAxdE36pPNU%2B1SVsLjrcDOFqmeSykfbHzeId0RbNIvllgGJthaEKreuw%2FdXPuLv7VyDjM%2FHLv3r8Bg%3D%3D&amp;SigAlg=http%3A%2F%2Fwww.w3.org%2F2000%2F09%2Fxmldsig%23rsa-sha1&amp;Signature=H135P%2BJYfiZ7Oi2SCxXKcSsu57byN5DhwMvvCliAYbCkHymDn0XhceZAahAMH73bqVb6SVWXOphTG8TydZfkVkXa3dsq1IUTVTBEZ2LTwUl5bcA4tk8Whf66fSsL2%2F3opT7Q0ZVRTJBizNUQ5hmW%2BdKe%2FKLtl8mqaOGKKW%2Fdo28%3D</stringProp>
+                <stringProp name="Argument.value">nZPdbtswDIVfxdC9f5u1jhC7yBIUC9BtXuLuYneawiwabMkT6TR9%2B8p2shnFFgS7MkBSh4cf6dn9sa68A1hURmcsDiLmgZZmq%2FSPjD2VD37K7vMZirpq%2BLylvV7DrxaQPPdOI%2B8TGWut5kagQq5FDchJ8s384yNPgog31pCRpmLeHBEsuUYLo7GtwW7AHpSEp%2FVjxvZEDQ%2FDeJoE8W0avLtznzueRmkUkhUHqIxU9BJIU4d7U0PwExvmLZ0TpQX15jsFfCMxTfl0MrkJO5%2BIhnkPxkroB8nYTlQIzFstM%2BbGXmEhENUB%2FiQQW1hpJKEpY0kU3%2Fpx7CeTMk74ZMqTm8CFvjGvOE34XumB2yUc34ci5B%2FKsvCLz5uSeV%2FP%2FF0BO9Puu9vrOYszXZa%2FATYLx4qDftLwT05itSxMpeTLqE1y%2FT6ryjwvLAhyzMi20OOtBV0W6CJq6%2B%2F6Ut50syOBJuZtis7Tl1ZUaqfAZmxwzMLfnk%2FXB9t%2Bhe6OCI70X%2BYXpm6EVdhhh6OQdALPx8qLylFdw27U4eolXCyTXHbSLtwd3bOx2%2B6IQLrJSis0NsbSsLa%2F%2BsmH3L%2BA5OeNj%2F%2FY%2FBU%3D</stringProp>
                 <stringProp name="Argument.metadata">=</stringProp>
                 <boolProp name="HTTPArgument.use_equals">true</boolProp>
                 <stringProp name="Argument.name">SAMLRequest</stringProp>
@@ -371,7 +371,6 @@ byte[] encryptedUid = Base64.encodeBase64(credentilas.getBytes());
 String credentilas=&quot;user&quot;+vars.get(&quot;user_count_id&quot;)+&quot;:password&quot;;
 //user_${__threadNum}_${user_index}
 //String credentilas=&quot;user_1_1:password&quot;;
-log.info(credentilas);
 
 byte[] encryptedUid = Base64.encodeBase64(credentilas.getBytes());
       vars.put(&quot;randomsectoken&quot;,new String(encryptedUid));</stringProp>
