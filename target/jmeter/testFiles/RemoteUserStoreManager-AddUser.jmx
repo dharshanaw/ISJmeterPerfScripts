@@ -15,7 +15,7 @@
         <collectionProp name="Arguments.arguments">
           <elementProp name="concurrency" elementType="Argument">
             <stringProp name="Argument.name">concurrency</stringProp>
-            <stringProp name="Argument.value">50</stringProp>
+            <stringProp name="Argument.value">100</stringProp>
             <stringProp name="Argument.metadata">=</stringProp>
           </elementProp>
           <elementProp name="loop_count" elementType="Argument">
@@ -25,7 +25,7 @@
           </elementProp>
           <elementProp name="host" elementType="Argument">
             <stringProp name="Argument.name">host</stringProp>
-            <stringProp name="Argument.value">192.168.57.69</stringProp>
+            <stringProp name="Argument.value">192.168.57.198</stringProp>
             <stringProp name="Argument.metadata">=</stringProp>
           </elementProp>
           <elementProp name="port" elementType="Argument">
@@ -90,7 +90,6 @@
       &lt;ser:addUser&gt;
          &lt;ser:userName&gt;user${user_index}&lt;/ser:userName&gt;
          &lt;ser:credential&gt;password&lt;/ser:credential&gt;
-         &lt;ser:roleList&gt;testRole&lt;/ser:roleList&gt;
          &lt;ser:claims&gt;
             &lt;xsd:claimURI&gt;http://wso2.org/claims/emailaddress&lt;/xsd:claimURI&gt;
             &lt;xsd:value&gt;user_${__threadNum}_${user_index}@test.com&lt;/xsd:value&gt;

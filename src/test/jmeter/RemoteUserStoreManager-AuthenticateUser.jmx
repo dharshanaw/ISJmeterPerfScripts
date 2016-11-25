@@ -246,12 +246,12 @@
               <threadName>true</threadName>
               <dataType>true</dataType>
               <encoding>false</encoding>
-              <assertions>true</assertions>
-              <subresults>true</subresults>
+              <assertions>false</assertions>
+              <subresults>false</subresults>
               <responseData>false</responseData>
               <samplerData>false</samplerData>
               <xml>false</xml>
-              <fieldNames>false</fieldNames>
+              <fieldNames>true</fieldNames>
               <responseHeaders>false</responseHeaders>
               <requestHeaders>false</requestHeaders>
               <responseDataOnError>false</responseDataOnError>
@@ -259,9 +259,10 @@
               <assertionsResultsToSave>0</assertionsResultsToSave>
               <bytes>true</bytes>
               <threadCounts>true</threadCounts>
+              <sampleCount>true</sampleCount>
             </value>
           </objProp>
-          <stringProp name="filename">result.csv</stringProp>
+          <stringProp name="filename">../results/result.csv</stringProp>
         </ResultCollector>
         <hashTree/>
       </hashTree>

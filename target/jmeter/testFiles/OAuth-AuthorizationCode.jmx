@@ -25,17 +25,17 @@
           </elementProp>
           <elementProp name="user_name" elementType="Argument">
             <stringProp name="Argument.name">user_name</stringProp>
-            <stringProp name="Argument.value">testuser</stringProp>
+            <stringProp name="Argument.value">admin</stringProp>
             <stringProp name="Argument.metadata">=</stringProp>
           </elementProp>
           <elementProp name="pass_word" elementType="Argument">
             <stringProp name="Argument.name">pass_word</stringProp>
-            <stringProp name="Argument.value">test123</stringProp>
+            <stringProp name="Argument.value">admin</stringProp>
             <stringProp name="Argument.metadata">=</stringProp>
           </elementProp>
           <elementProp name="server_ip" elementType="Argument">
             <stringProp name="Argument.name">server_ip</stringProp>
-            <stringProp name="Argument.value">192.168.57.69</stringProp>
+            <stringProp name="Argument.value">192.168.57.166</stringProp>
             <stringProp name="Argument.metadata">=</stringProp>
           </elementProp>
           <elementProp name="server_port" elementType="Argument">
@@ -55,7 +55,7 @@
           </elementProp>
           <elementProp name="callbackURL" elementType="Argument">
             <stringProp name="Argument.name">callbackURL</stringProp>
-            <stringProp name="Argument.value">https://10.100.7.65/oauth/callback</stringProp>
+            <stringProp name="Argument.value">https://10.100.1.105/oauth/callback</stringProp>
             <stringProp name="Argument.metadata">=</stringProp>
           </elementProp>
           <elementProp name="user_count" elementType="Argument">

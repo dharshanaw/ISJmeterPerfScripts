@@ -15,17 +15,17 @@
         <collectionProp name="Arguments.arguments">
           <elementProp name="user_count_login" elementType="Argument">
             <stringProp name="Argument.name">user_count_login</stringProp>
-            <stringProp name="Argument.value">10</stringProp>
+            <stringProp name="Argument.value">300</stringProp>
             <stringProp name="Argument.metadata">=</stringProp>
           </elementProp>
           <elementProp name="loop_count_login" elementType="Argument">
             <stringProp name="Argument.name">loop_count_login</stringProp>
-            <stringProp name="Argument.value">10</stringProp>
+            <stringProp name="Argument.value">100000</stringProp>
             <stringProp name="Argument.metadata">=</stringProp>
           </elementProp>
           <elementProp name="user_count" elementType="Argument">
             <stringProp name="Argument.name">user_count</stringProp>
-            <stringProp name="Argument.value">10</stringProp>
+            <stringProp name="Argument.value">70</stringProp>
             <stringProp name="Argument.metadata">=</stringProp>
           </elementProp>
           <elementProp name="loop_count" elementType="Argument">
@@ -35,7 +35,7 @@
           </elementProp>
           <elementProp name="host" elementType="Argument">
             <stringProp name="Argument.name">host</stringProp>
-            <stringProp name="Argument.value">localhost</stringProp>
+            <stringProp name="Argument.value">192.168.57.198</stringProp>
             <stringProp name="Argument.metadata">=</stringProp>
           </elementProp>
           <elementProp name="port" elementType="Argument">
@@ -60,7 +60,7 @@
         <stringProp name="ThreadGroup.on_sample_error">continue</stringProp>
         <elementProp name="ThreadGroup.main_controller" elementType="LoopController" guiclass="LoopControlPanel" testclass="LoopController" testname="Loop Controller" enabled="true">
           <boolProp name="LoopController.continue_forever">false</boolProp>
-          <stringProp name="LoopController.loops">${loop_count_login}</stringProp>
+          <stringProp name="LoopController.loops">1000000</stringProp>
         </elementProp>
         <stringProp name="ThreadGroup.num_threads">${user_count_login}</stringProp>
         <stringProp name="ThreadGroup.ramp_time">${ramp_up}</stringProp>
@@ -198,7 +198,7 @@
           <boolProp name="CookieManager.clearEachIteration">false</boolProp>
         </CookieManager>
         <hashTree/>
-        <ResultCollector guiclass="ViewResultsFullVisualizer" testclass="ResultCollector" testname="View Results Tree" enabled="true">
+        <ResultCollector guiclass="ViewResultsFullVisualizer" testclass="ResultCollector" testname="View Results Tree" enabled="false">
           <boolProp name="ResultCollector.error_logging">false</boolProp>
           <objProp>
             <name>saveConfig</name>
@@ -261,7 +261,7 @@
               <threadCounts>true</threadCounts>
             </value>
           </objProp>
-          <stringProp name="filename"></stringProp>
+          <stringProp name="filename">result.csv</stringProp>
         </ResultCollector>
         <hashTree/>
       </hashTree>

@@ -54,7 +54,7 @@
           </elementProp>
           <elementProp name="host" elementType="Argument">
             <stringProp name="Argument.name">host</stringProp>
-            <stringProp name="Argument.value">192.168.57.69</stringProp>
+            <stringProp name="Argument.value">192.168.57.166</stringProp>
             <stringProp name="Argument.metadata">=</stringProp>
           </elementProp>
           <elementProp name="port" elementType="Argument">
@@ -116,7 +116,7 @@
               </elementProp>
               <elementProp name="-H &quot;Authorization" elementType="Header">
                 <stringProp name="Header.name">Authorization</stringProp>
-                <stringProp name="Header.value">Bearer ${access_token}</stringProp>
+                <stringProp name="Header.value">Basic YWRtaW46YWRtaW4=</stringProp>
               </elementProp>
             </collectionProp>
           </HeaderManager>
@@ -243,7 +243,7 @@
               </elementProp>
               <elementProp name="-H &quot;Authorization" elementType="Header">
                 <stringProp name="Header.name">Authorization</stringProp>
-                <stringProp name="Header.value">Bearer ${access_token}</stringProp>
+                <stringProp name="Header.value">Basic YWRtaW46YWRtaW4=</stringProp>
               </elementProp>
             </collectionProp>
           </HeaderManager>
@@ -300,7 +300,7 @@
               </elementProp>
               <elementProp name="-H &quot;Authorization" elementType="Header">
                 <stringProp name="Header.name">Authorization</stringProp>
-                <stringProp name="Header.value">Bearer ${access_token}</stringProp>
+                <stringProp name="Header.value">Basic YWRtaW46YWRtaW4=</stringProp>
               </elementProp>
             </collectionProp>
           </HeaderManager>
