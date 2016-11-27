@@ -30,7 +30,7 @@
                 </executions>
                 <configuration>
                     <testFilesIncluded>
-                        <jMeterTestFile>SAML2-SSO-RequestPath.jmx</jMeterTestFile>
+                        <jMeterTestFile>SCIM-User-Add.jmx</jMeterTestFile>
                     </testFilesIncluded>
                     <resultsFileFormat>csv</resultsFileFormat>
                 </configuration>
