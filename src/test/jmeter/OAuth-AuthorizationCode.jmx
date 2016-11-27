@@ -15,12 +15,12 @@
         <collectionProp name="Arguments.arguments">
           <elementProp name="user_count_login" elementType="Argument">
             <stringProp name="Argument.name">user_count_login</stringProp>
-            <stringProp name="Argument.value">100</stringProp>
+            <stringProp name="Argument.value">1</stringProp>
             <stringProp name="Argument.metadata">=</stringProp>
           </elementProp>
           <elementProp name="loop_count_login" elementType="Argument">
             <stringProp name="Argument.name">loop_count_login</stringProp>
-            <stringProp name="Argument.value">100</stringProp>
+            <stringProp name="Argument.value">1</stringProp>
             <stringProp name="Argument.metadata">=</stringProp>
           </elementProp>
           <elementProp name="user_name" elementType="Argument">
@@ -35,7 +35,7 @@
           </elementProp>
           <elementProp name="server_ip" elementType="Argument">
             <stringProp name="Argument.name">server_ip</stringProp>
-            <stringProp name="Argument.value">192.168.57.166</stringProp>
+            <stringProp name="Argument.value">192.168.57.198</stringProp>
             <stringProp name="Argument.metadata">=</stringProp>
           </elementProp>
           <elementProp name="server_port" elementType="Argument">
@@ -45,12 +45,12 @@
           </elementProp>
           <elementProp name="consumerKey" elementType="Argument">
             <stringProp name="Argument.name">consumerKey</stringProp>
-            <stringProp name="Argument.value">PqubfPwzkgYHoxpmLA7pbEVRu_Ea</stringProp>
+            <stringProp name="Argument.value">gvNoCyk2KQNh2drIm1tiKTfjREEa</stringProp>
             <stringProp name="Argument.metadata">=</stringProp>
           </elementProp>
           <elementProp name="consumerSecret" elementType="Argument">
             <stringProp name="Argument.name">consumerSecret</stringProp>
-            <stringProp name="Argument.value">wnuhY3xiY6VE3zWhanlFLJsHDp0a</stringProp>
+            <stringProp name="Argument.value">6Rq1fuT4RzpI6MHNNE3siWYzUb8a</stringProp>
             <stringProp name="Argument.metadata">=</stringProp>
           </elementProp>
           <elementProp name="callbackURL" elementType="Argument">
