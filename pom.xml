@@ -30,7 +30,7 @@
                 </executions>
                 <configuration>
                     <testFilesIncluded>
-                        <jMeterTestFile>SCIM-User-Add.jmx</jMeterTestFile>
+                        <jMeterTestFile>OAuth-AuthorizationCode.jmx</jMeterTestFile>
                     </testFilesIncluded>
                     <resultsFileFormat>csv</resultsFileFormat>
                 </configuration>

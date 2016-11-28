@@ -45,17 +45,17 @@
           </elementProp>
           <elementProp name="consumerKey" elementType="Argument">
             <stringProp name="Argument.name">consumerKey</stringProp>
-            <stringProp name="Argument.value">gvNoCyk2KQNh2drIm1tiKTfjREEa</stringProp>
+            <stringProp name="Argument.value">fjlz6lWVh0wG2ugBn6Dki86UQhYa</stringProp>
             <stringProp name="Argument.metadata">=</stringProp>
           </elementProp>
           <elementProp name="consumerSecret" elementType="Argument">
             <stringProp name="Argument.name">consumerSecret</stringProp>
-            <stringProp name="Argument.value">6Rq1fuT4RzpI6MHNNE3siWYzUb8a</stringProp>
+            <stringProp name="Argument.value">tSEOfxbZfQrfGMbXq9IjVAAixlIa</stringProp>
             <stringProp name="Argument.metadata">=</stringProp>
           </elementProp>
           <elementProp name="callbackURL" elementType="Argument">
             <stringProp name="Argument.name">callbackURL</stringProp>
-            <stringProp name="Argument.value">https://10.100.1.105/oauth/callback</stringProp>
+            <stringProp name="Argument.value">https://192.168.57.166/oauth/callback</stringProp>
             <stringProp name="Argument.metadata">=</stringProp>
           </elementProp>
           <elementProp name="user_count" elementType="Argument">
@@ -74,6 +74,7 @@
             <stringProp name="Argument.metadata">=</stringProp>
           </elementProp>
         </collectionProp>
+        <stringProp name="TestPlan.comments">https://10.100.1.105/oauth/callback</stringProp>
       </Arguments>
       <hashTree/>
       <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="Thread Group" enabled="true">
@@ -202,14 +203,14 @@
             <collectionProp name="Arguments.arguments">
               <elementProp name="username" elementType="HTTPArgument">
                 <boolProp name="HTTPArgument.always_encode">false</boolProp>
-                <stringProp name="Argument.value">user${user_count_id}</stringProp>
+                <stringProp name="Argument.value">admin</stringProp>
                 <stringProp name="Argument.metadata">=</stringProp>
                 <boolProp name="HTTPArgument.use_equals">true</boolProp>
                 <stringProp name="Argument.name">username</stringProp>
               </elementProp>
               <elementProp name="password" elementType="HTTPArgument">
                 <boolProp name="HTTPArgument.always_encode">false</boolProp>
-                <stringProp name="Argument.value">password</stringProp>
+                <stringProp name="Argument.value">admin</stringProp>
                 <stringProp name="Argument.metadata">=</stringProp>
                 <boolProp name="HTTPArgument.use_equals">true</boolProp>
                 <stringProp name="Argument.name">password</stringProp>
@@ -249,7 +250,7 @@
             <intProp name="Assertion.test_type">2</intProp>
           </ResponseAssertion>
           <hashTree/>
-          <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Common Auth Login Response Assertion" enabled="true">
+          <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Common Auth Login Response Assertion" enabled="false">
             <collectionProp name="Asserion.test_strings">
               <stringProp name="-1156489889">jmeter</stringProp>
             </collectionProp>
@@ -349,7 +350,7 @@
               </elementProp>
               <elementProp name="grant_type" elementType="HTTPArgument">
                 <boolProp name="HTTPArgument.always_encode">false</boolProp>
-                <stringProp name="Argument.value">authorization_code</stringProp>
+                <stringProp name="Argument.value">client_credentials</stringProp>
                 <stringProp name="Argument.metadata">=</stringProp>
                 <boolProp name="HTTPArgument.use_equals">true</boolProp>
                 <stringProp name="Argument.name">grant_type</stringProp>
