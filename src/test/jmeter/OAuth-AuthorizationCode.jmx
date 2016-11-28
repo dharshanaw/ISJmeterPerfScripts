@@ -81,15 +81,15 @@
         <stringProp name="ThreadGroup.on_sample_error">continue</stringProp>
         <elementProp name="ThreadGroup.main_controller" elementType="LoopController" guiclass="LoopControlPanel" testclass="LoopController" testname="Loop Controller" enabled="true">
           <boolProp name="LoopController.continue_forever">false</boolProp>
-          <stringProp name="LoopController.loops">${loop_count_login}</stringProp>
+          <intProp name="LoopController.loops">-1</intProp>
         </elementProp>
         <stringProp name="ThreadGroup.num_threads">100</stringProp>
         <stringProp name="ThreadGroup.ramp_time">${ramp_up}</stringProp>
         <longProp name="ThreadGroup.start_time">1394208748000</longProp>
         <longProp name="ThreadGroup.end_time">1394208748000</longProp>
         <boolProp name="ThreadGroup.scheduler">true</boolProp>
-        <stringProp name="ThreadGroup.duration">5</stringProp>
-        <stringProp name="ThreadGroup.delay">3600</stringProp>
+        <stringProp name="ThreadGroup.duration">3600</stringProp>
+        <stringProp name="ThreadGroup.delay">50</stringProp>
       </ThreadGroup>
       <hashTree>
         <RandomVariableConfig guiclass="TestBeanGUI" testclass="RandomVariableConfig" testname="Random Variable_user" enabled="true">
@@ -497,15 +497,15 @@
         <stringProp name="ThreadGroup.on_sample_error">continue</stringProp>
         <elementProp name="ThreadGroup.main_controller" elementType="LoopController" guiclass="LoopControlPanel" testclass="LoopController" testname="Loop Controller" enabled="true">
           <boolProp name="LoopController.continue_forever">false</boolProp>
-          <stringProp name="LoopController.loops">${loop_count_login}</stringProp>
+          <intProp name="LoopController.loops">-1</intProp>
         </elementProp>
         <stringProp name="ThreadGroup.num_threads">200</stringProp>
         <stringProp name="ThreadGroup.ramp_time">${ramp_up}</stringProp>
         <longProp name="ThreadGroup.start_time">1394208748000</longProp>
         <longProp name="ThreadGroup.end_time">1394208748000</longProp>
         <boolProp name="ThreadGroup.scheduler">true</boolProp>
-        <stringProp name="ThreadGroup.duration">5</stringProp>
-        <stringProp name="ThreadGroup.delay">3600</stringProp>
+        <stringProp name="ThreadGroup.duration">3600</stringProp>
+        <stringProp name="ThreadGroup.delay">50</stringProp>
       </ThreadGroup>
       <hashTree>
         <RandomVariableConfig guiclass="TestBeanGUI" testclass="RandomVariableConfig" testname="Random Variable_user" enabled="true">
@@ -913,15 +913,15 @@
         <stringProp name="ThreadGroup.on_sample_error">continue</stringProp>
         <elementProp name="ThreadGroup.main_controller" elementType="LoopController" guiclass="LoopControlPanel" testclass="LoopController" testname="Loop Controller" enabled="true">
           <boolProp name="LoopController.continue_forever">false</boolProp>
-          <stringProp name="LoopController.loops">${loop_count_login}</stringProp>
+          <intProp name="LoopController.loops">-1</intProp>
         </elementProp>
         <stringProp name="ThreadGroup.num_threads">300</stringProp>
         <stringProp name="ThreadGroup.ramp_time">${ramp_up}</stringProp>
         <longProp name="ThreadGroup.start_time">1394208748000</longProp>
         <longProp name="ThreadGroup.end_time">1394208748000</longProp>
-        <boolProp name="ThreadGroup.scheduler">false</boolProp>
-        <stringProp name="ThreadGroup.duration">5</stringProp>
-        <stringProp name="ThreadGroup.delay">3600</stringProp>
+        <boolProp name="ThreadGroup.scheduler">true</boolProp>
+        <stringProp name="ThreadGroup.duration">3600</stringProp>
+        <stringProp name="ThreadGroup.delay">50</stringProp>
       </ThreadGroup>
       <hashTree>
         <RandomVariableConfig guiclass="TestBeanGUI" testclass="RandomVariableConfig" testname="Random Variable_user" enabled="true">
@@ -1329,15 +1329,15 @@
         <stringProp name="ThreadGroup.on_sample_error">continue</stringProp>
         <elementProp name="ThreadGroup.main_controller" elementType="LoopController" guiclass="LoopControlPanel" testclass="LoopController" testname="Loop Controller" enabled="true">
           <boolProp name="LoopController.continue_forever">false</boolProp>
-          <stringProp name="LoopController.loops">${loop_count_login}</stringProp>
+          <intProp name="LoopController.loops">-1</intProp>
         </elementProp>
         <stringProp name="ThreadGroup.num_threads">400</stringProp>
         <stringProp name="ThreadGroup.ramp_time">${ramp_up}</stringProp>
         <longProp name="ThreadGroup.start_time">1394208748000</longProp>
         <longProp name="ThreadGroup.end_time">1394208748000</longProp>
-        <boolProp name="ThreadGroup.scheduler">false</boolProp>
-        <stringProp name="ThreadGroup.duration">5</stringProp>
-        <stringProp name="ThreadGroup.delay">3600</stringProp>
+        <boolProp name="ThreadGroup.scheduler">true</boolProp>
+        <stringProp name="ThreadGroup.duration">3600</stringProp>
+        <stringProp name="ThreadGroup.delay">50</stringProp>
       </ThreadGroup>
       <hashTree>
         <RandomVariableConfig guiclass="TestBeanGUI" testclass="RandomVariableConfig" testname="Random Variable_user" enabled="true">
