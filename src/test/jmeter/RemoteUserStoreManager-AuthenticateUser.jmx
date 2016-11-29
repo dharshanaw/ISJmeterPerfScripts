@@ -72,12 +72,12 @@
       </ThreadGroup>
       <hashTree>
         <RandomVariableConfig guiclass="TestBeanGUI" testclass="RandomVariableConfig" testname="Random Variable_user" enabled="true">
-          <stringProp name="maximumValue">${__BeanShell(${user_count}*${loop_count})}</stringProp>
+          <stringProp name="maximumValue">1500000</stringProp>
           <stringProp name="minimumValue">1</stringProp>
           <stringProp name="outputFormat"></stringProp>
           <boolProp name="perThread">true</boolProp>
           <stringProp name="randomSeed"></stringProp>
-          <stringProp name="variableName">user_count_id-2</stringProp>
+          <stringProp name="variableName">user_count_id</stringProp>
         </RandomVariableConfig>
         <hashTree/>
         <CounterConfig guiclass="CounterConfigGui" testclass="CounterConfig" testname="Counter" enabled="false">
@@ -265,15 +265,6 @@
           <stringProp name="filename">../results/result.csv</stringProp>
         </ResultCollector>
         <hashTree/>
-        <CounterConfig guiclass="CounterConfigGui" testclass="CounterConfig" testname="Counter_user_count_id" enabled="true">
-          <stringProp name="CounterConfig.start">1</stringProp>
-          <stringProp name="CounterConfig.end"></stringProp>
-          <stringProp name="CounterConfig.incr">1</stringProp>
-          <stringProp name="CounterConfig.name">user_count_id</stringProp>
-          <stringProp name="CounterConfig.format"></stringProp>
-          <boolProp name="CounterConfig.per_user">false</boolProp>
-        </CounterConfig>
-        <hashTree/>
         <ResultCollector guiclass="ViewResultsFullVisualizer" testclass="ResultCollector" testname="View Results Tree" enabled="true">
           <boolProp name="ResultCollector.error_logging">false</boolProp>
           <objProp>
@@ -325,12 +316,12 @@
       </ThreadGroup>
       <hashTree>
         <RandomVariableConfig guiclass="TestBeanGUI" testclass="RandomVariableConfig" testname="Random Variable_user" enabled="true">
-          <stringProp name="maximumValue">${__BeanShell(${user_count}*${loop_count})}</stringProp>
+          <stringProp name="maximumValue">1500000</stringProp>
           <stringProp name="minimumValue">1</stringProp>
           <stringProp name="outputFormat"></stringProp>
           <boolProp name="perThread">true</boolProp>
           <stringProp name="randomSeed"></stringProp>
-          <stringProp name="variableName">user_count_id-2</stringProp>
+          <stringProp name="variableName">user_count_id</stringProp>
         </RandomVariableConfig>
         <hashTree/>
         <CounterConfig guiclass="CounterConfigGui" testclass="CounterConfig" testname="Counter" enabled="false">
@@ -424,7 +415,7 @@
    &lt;soapenv:Body&gt;
       &lt;ser:authenticate&gt;
          &lt;!--Optional:--&gt;
-         &lt;ser:userName&gt;user200${user_count_id}&lt;/ser:userName&gt;
+         &lt;ser:userName&gt;user100${user_count_id}&lt;/ser:userName&gt;
          &lt;!--Optional:--&gt;
          &lt;ser:credential&gt;password&lt;/ser:credential&gt;
       &lt;/ser:authenticate&gt;
@@ -517,15 +508,6 @@
           </objProp>
           <stringProp name="filename">../results/result.csv</stringProp>
         </ResultCollector>
-        <hashTree/>
-        <CounterConfig guiclass="CounterConfigGui" testclass="CounterConfig" testname="Counter_user_count_id" enabled="true">
-          <stringProp name="CounterConfig.start">1</stringProp>
-          <stringProp name="CounterConfig.end"></stringProp>
-          <stringProp name="CounterConfig.incr">1</stringProp>
-          <stringProp name="CounterConfig.name">user_count_id</stringProp>
-          <stringProp name="CounterConfig.format"></stringProp>
-          <boolProp name="CounterConfig.per_user">false</boolProp>
-        </CounterConfig>
         <hashTree/>
       </hashTree>
       <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="Thread Group" enabled="true">
@@ -544,12 +526,12 @@
       </ThreadGroup>
       <hashTree>
         <RandomVariableConfig guiclass="TestBeanGUI" testclass="RandomVariableConfig" testname="Random Variable_user" enabled="true">
-          <stringProp name="maximumValue">${__BeanShell(${user_count}*${loop_count})}</stringProp>
+          <stringProp name="maximumValue">1500000</stringProp>
           <stringProp name="minimumValue">1</stringProp>
           <stringProp name="outputFormat"></stringProp>
           <boolProp name="perThread">true</boolProp>
           <stringProp name="randomSeed"></stringProp>
-          <stringProp name="variableName">user_count_id-2</stringProp>
+          <stringProp name="variableName">user_count_id</stringProp>
         </RandomVariableConfig>
         <hashTree/>
         <CounterConfig guiclass="CounterConfigGui" testclass="CounterConfig" testname="Counter" enabled="false">
@@ -643,7 +625,7 @@
    &lt;soapenv:Body&gt;
       &lt;ser:authenticate&gt;
          &lt;!--Optional:--&gt;
-         &lt;ser:userName&gt;user300${user_count_id}&lt;/ser:userName&gt;
+         &lt;ser:userName&gt;user100${user_count_id}&lt;/ser:userName&gt;
          &lt;!--Optional:--&gt;
          &lt;ser:credential&gt;password&lt;/ser:credential&gt;
       &lt;/ser:authenticate&gt;
@@ -736,15 +718,6 @@
           </objProp>
           <stringProp name="filename">../results/result.csv</stringProp>
         </ResultCollector>
-        <hashTree/>
-        <CounterConfig guiclass="CounterConfigGui" testclass="CounterConfig" testname="Counter_user_count_id" enabled="true">
-          <stringProp name="CounterConfig.start">1</stringProp>
-          <stringProp name="CounterConfig.end"></stringProp>
-          <stringProp name="CounterConfig.incr">1</stringProp>
-          <stringProp name="CounterConfig.name">user_count_id</stringProp>
-          <stringProp name="CounterConfig.format"></stringProp>
-          <boolProp name="CounterConfig.per_user">false</boolProp>
-        </CounterConfig>
         <hashTree/>
       </hashTree>
       <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="Thread Group" enabled="true">
@@ -763,12 +736,12 @@
       </ThreadGroup>
       <hashTree>
         <RandomVariableConfig guiclass="TestBeanGUI" testclass="RandomVariableConfig" testname="Random Variable_user" enabled="true">
-          <stringProp name="maximumValue">${__BeanShell(${user_count}*${loop_count})}</stringProp>
+          <stringProp name="maximumValue">1500000</stringProp>
           <stringProp name="minimumValue">1</stringProp>
           <stringProp name="outputFormat"></stringProp>
           <boolProp name="perThread">true</boolProp>
           <stringProp name="randomSeed"></stringProp>
-          <stringProp name="variableName">user_count_id-2</stringProp>
+          <stringProp name="variableName">user_count_id</stringProp>
         </RandomVariableConfig>
         <hashTree/>
         <CounterConfig guiclass="CounterConfigGui" testclass="CounterConfig" testname="Counter" enabled="false">
@@ -862,7 +835,7 @@
    &lt;soapenv:Body&gt;
       &lt;ser:authenticate&gt;
          &lt;!--Optional:--&gt;
-         &lt;ser:userName&gt;user400${user_count_id}&lt;/ser:userName&gt;
+         &lt;ser:userName&gt;user100${user_count_id}&lt;/ser:userName&gt;
          &lt;!--Optional:--&gt;
          &lt;ser:credential&gt;password&lt;/ser:credential&gt;
       &lt;/ser:authenticate&gt;
@@ -955,15 +928,6 @@
           </objProp>
           <stringProp name="filename">../results/result.csv</stringProp>
         </ResultCollector>
-        <hashTree/>
-        <CounterConfig guiclass="CounterConfigGui" testclass="CounterConfig" testname="Counter_user_count_id" enabled="true">
-          <stringProp name="CounterConfig.start">1</stringProp>
-          <stringProp name="CounterConfig.end"></stringProp>
-          <stringProp name="CounterConfig.incr">1</stringProp>
-          <stringProp name="CounterConfig.name">user_count_id</stringProp>
-          <stringProp name="CounterConfig.format"></stringProp>
-          <boolProp name="CounterConfig.per_user">false</boolProp>
-        </CounterConfig>
         <hashTree/>
       </hashTree>
     </hashTree>

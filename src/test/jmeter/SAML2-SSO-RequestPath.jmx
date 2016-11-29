@@ -295,7 +295,7 @@ byte[] encryptedUid = Base64.encodeBase64(credentilas.getBytes());
         <longProp name="ThreadGroup.end_time">1350543084000</longProp>
         <boolProp name="ThreadGroup.scheduler">true</boolProp>
         <stringProp name="ThreadGroup.duration">3600</stringProp>
-        <stringProp name="ThreadGroup.delay">200</stringProp>
+        <stringProp name="ThreadGroup.delay">5</stringProp>
         <boolProp name="ThreadGroup.delayedStart">true</boolProp>
       </ThreadGroup>
       <hashTree>
@@ -368,7 +368,7 @@ byte[] encryptedUid = Base64.encodeBase64(credentilas.getBytes());
             <stringProp name="script">import org.apache.commons.codec.binary.Base64;
 
 //String credentilas= &quot;mayor:password&quot;;
-String credentilas=&quot;user&quot;+vars.get(&quot;user_count_id&quot;)+&quot;:password&quot;;
+String credentilas=&quot;user100&quot;+vars.get(&quot;user_count_id&quot;)+&quot;:password&quot;;
 //user_${__threadNum}_${user_index}
 //String credentilas=&quot;user_1_1:password&quot;;
 
@@ -376,7 +376,7 @@ byte[] encryptedUid = Base64.encodeBase64(credentilas.getBytes());
       vars.put(&quot;randomsectoken&quot;,new String(encryptedUid));</stringProp>
           </BeanShellPreProcessor>
           <hashTree/>
-          <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="200 OK HTTP Code Response Assertion" enabled="true">
+          <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="200 OK HTTP Code Response Assertion" enabled="false">
             <collectionProp name="Asserion.test_strings">
               <stringProp name="-281642938">You are now redirected back to</stringProp>
               <stringProp name="0"></stringProp>
@@ -396,12 +396,12 @@ byte[] encryptedUid = Base64.encodeBase64(credentilas.getBytes());
           </RegexExtractor>
           <hashTree/>
         </hashTree>
-        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Identity Provider Login HTTP Request" enabled="false">
+        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Identity Provider Login HTTP Request" enabled="true">
           <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" testname="User Defined Variables" enabled="true">
             <collectionProp name="Arguments.arguments">
               <elementProp name="username" elementType="HTTPArgument">
                 <boolProp name="HTTPArgument.always_encode">false</boolProp>
-                <stringProp name="Argument.value">user_${user_count_id}_${user_id}</stringProp>
+                <stringProp name="Argument.value">user100${user_count_id}</stringProp>
                 <stringProp name="Argument.metadata">=</stringProp>
                 <boolProp name="HTTPArgument.use_equals">true</boolProp>
                 <stringProp name="Argument.name">username</stringProp>
