@@ -30,7 +30,8 @@
                 </executions>
                 <configuration>
                     <testFilesIncluded>
-                        <jMeterTestFile>OAuth-AuthorizationCode.jmx</jMeterTestFile>
+                        <jMeterTestFile>RemoteUserStoreManager-AddUser.jmx</jMeterTestFile>
+                        <jMeterTestFile>RemoteUserStoreManager-AuthenticateUser.jmx</jMeterTestFile>
                     </testFilesIncluded>
                     <resultsFileFormat>csv</resultsFileFormat>
                 </configuration>
