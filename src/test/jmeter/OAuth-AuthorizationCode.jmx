@@ -45,12 +45,12 @@
           </elementProp>
           <elementProp name="consumerKey" elementType="Argument">
             <stringProp name="Argument.name">consumerKey</stringProp>
-            <stringProp name="Argument.value">z6v3_3WsFttZrhpqykTOzGhKxBAa</stringProp>
+            <stringProp name="Argument.value">HxSeV23FDGUJa5KTsgz8phyzNPsa</stringProp>
             <stringProp name="Argument.metadata">=</stringProp>
           </elementProp>
           <elementProp name="consumerSecret" elementType="Argument">
             <stringProp name="Argument.name">consumerSecret</stringProp>
-            <stringProp name="Argument.value">e2X70fcFpKhBU_tZT2QQfbTfKD0a</stringProp>
+            <stringProp name="Argument.value">bfA_TyYWDp37nc_OhLam0yzwKXEa</stringProp>
             <stringProp name="Argument.metadata">=</stringProp>
           </elementProp>
           <elementProp name="callbackURL" elementType="Argument">
