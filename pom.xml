@@ -31,8 +31,8 @@
                 <configuration>
                     <testFilesIncluded>
                         <!--jMeterTestFile>RemoteUserStoreManager-AuthenticateUser.jmx</jMeterTestFile-->
-                        <!--jMeterTestFile>OAuth-AuthorizationCode.jmx</jMeterTestFile-->
-                        <jMeterTestFile>passive-sts.jmx</jMeterTestFile>
+                        <jMeterTestFile>OAuth-AuthorizationCode.jmx</jMeterTestFile>
+                        <!--jMeterTestFile>passive-sts.jmx</jMeterTestFile>-->
                     </testFilesIncluded>
                     <resultsFileFormat>csv</resultsFileFormat>
                 </configuration>
