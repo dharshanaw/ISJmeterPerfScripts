@@ -939,7 +939,7 @@
               <threadCounts>true</threadCounts>
             </value>
           </objProp>
-          <stringProp name="filename">../../rports/oauth-200-SR.jtl</stringProp>
+          <stringProp name="filename">/Users/dharshana/isDevelopment/results_Oauth/oauth-200-SR.jtl</stringProp>
         </ResultCollector>
         <hashTree/>
         <ResultCollector guiclass="StatVisualizer" testclass="ResultCollector" testname="Aggregate Report" enabled="true">
@@ -973,7 +973,7 @@
               <idleTime>true</idleTime>
             </value>
           </objProp>
-          <stringProp name="filename">../../rports/oauth-200-AR.jtl</stringProp>
+          <stringProp name="filename">/Users/dharshana/isDevelopment/results_Oauth/oauth-200-AR.jtl</stringProp>
         </ResultCollector>
         <hashTree/>
         <ResultCollector guiclass="StatGraphVisualizer" testclass="ResultCollector" testname="Aggregate Graph" enabled="true">
@@ -1007,7 +1007,7 @@
               <idleTime>true</idleTime>
             </value>
           </objProp>
-          <stringProp name="filename">../../rports/oauth-200-AG.jtl</stringProp>
+          <stringProp name="filename">/Users/dharshana/isDevelopment/results_Oauth/oauth-200-AG.jtl</stringProp>
         </ResultCollector>
         <hashTree/>
         <ResultCollector guiclass="GraphVisualizer" testclass="ResultCollector" testname="Graph Results" enabled="true">
@@ -1041,7 +1041,7 @@
               <idleTime>true</idleTime>
             </value>
           </objProp>
-          <stringProp name="filename">../../rports/oauth-200-GR.jtl</stringProp>
+          <stringProp name="filename">/Users/dharshana/isDevelopment/results_Oauth/oauth-200-GR.jtl</stringProp>
         </ResultCollector>
         <hashTree/>
       </hashTree>
