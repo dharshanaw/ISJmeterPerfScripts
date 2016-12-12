@@ -456,7 +456,7 @@
               <threadCounts>true</threadCounts>
             </value>
           </objProp>
-          <stringProp name="filename">../../rports/oauth-100-SR.jtl</stringProp>
+          <stringProp name="filename">/Users/dharshana/isDevelopment/results_Oauth/oauth-100-SR.jtl</stringProp>
         </ResultCollector>
         <hashTree/>
         <ResultCollector guiclass="StatVisualizer" testclass="ResultCollector" testname="Aggregate Report" enabled="true">
