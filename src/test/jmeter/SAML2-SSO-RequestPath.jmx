@@ -488,7 +488,7 @@ byte[] encryptedUid = Base64.encodeBase64(credentilas.getBytes());
               <threadCounts>true</threadCounts>
             </value>
           </objProp>
-          <stringProp name="filename">../../reports-sso/SamlssoSR-100.jtl</stringProp>
+          <stringProp name="filename">../../RC1/reports-sso/SamlssoSR-100.jtl</stringProp>
         </ResultCollector>
         <hashTree/>
         <ResultCollector guiclass="ViewResultsFullVisualizer" testclass="ResultCollector" testname="View Results Tree" enabled="true">
@@ -555,7 +555,7 @@ byte[] encryptedUid = Base64.encodeBase64(credentilas.getBytes());
               <idleTime>true</idleTime>
             </value>
           </objProp>
-          <stringProp name="filename">../../reports-sso/SamlssoAR-100.jtl</stringProp>
+          <stringProp name="filename">../../RC1/reports-sso/SamlssoAR-100.jtl</stringProp>
         </ResultCollector>
         <hashTree/>
       </hashTree>
@@ -844,7 +844,7 @@ byte[] encryptedUid = Base64.encodeBase64(credentilas.getBytes());
               <threadCounts>true</threadCounts>
             </value>
           </objProp>
-          <stringProp name="filename">../../reports-sso/SamlssoSR-200.jtl</stringProp>
+          <stringProp name="filename">../../RC1/reports-sso/SamlssoSR-200.jtl</stringProp>
         </ResultCollector>
         <hashTree/>
         <ResultCollector guiclass="ViewResultsFullVisualizer" testclass="ResultCollector" testname="View Results Tree" enabled="true">
@@ -911,7 +911,7 @@ byte[] encryptedUid = Base64.encodeBase64(credentilas.getBytes());
               <idleTime>true</idleTime>
             </value>
           </objProp>
-          <stringProp name="filename">../../reports-sso/SamlssoAR-200.jtl</stringProp>
+          <stringProp name="filename">../../RC1/reports-sso/SamlssoAR-200.jtl</stringProp>
         </ResultCollector>
         <hashTree/>
       </hashTree>
@@ -1200,7 +1200,7 @@ byte[] encryptedUid = Base64.encodeBase64(credentilas.getBytes());
               <threadCounts>true</threadCounts>
             </value>
           </objProp>
-          <stringProp name="filename">../../reports-sso/SamlssoSR-300.jtl</stringProp>
+          <stringProp name="filename">../../RC1/reports-sso/SamlssoSR-300.jtl</stringProp>
         </ResultCollector>
         <hashTree/>
         <ResultCollector guiclass="ViewResultsFullVisualizer" testclass="ResultCollector" testname="View Results Tree" enabled="true">
@@ -1267,7 +1267,7 @@ byte[] encryptedUid = Base64.encodeBase64(credentilas.getBytes());
               <idleTime>true</idleTime>
             </value>
           </objProp>
-          <stringProp name="filename">../../reports-sso/SamlssoAR-300.jtl</stringProp>
+          <stringProp name="filename">../../RC1/reports-sso/SamlssoAR-300.jtl</stringProp>
         </ResultCollector>
         <hashTree/>
       </hashTree>
@@ -1556,7 +1556,7 @@ byte[] encryptedUid = Base64.encodeBase64(credentilas.getBytes());
               <threadCounts>true</threadCounts>
             </value>
           </objProp>
-          <stringProp name="filename">../../reports-sso/SamlssoSR-400.jtl</stringProp>
+          <stringProp name="filename">../../RC1/reports-sso/SamlssoSR-400.jtl</stringProp>
         </ResultCollector>
         <hashTree/>
         <ResultCollector guiclass="ViewResultsFullVisualizer" testclass="ResultCollector" testname="View Results Tree" enabled="true">
@@ -1623,7 +1623,7 @@ byte[] encryptedUid = Base64.encodeBase64(credentilas.getBytes());
               <idleTime>true</idleTime>
             </value>
           </objProp>
-          <stringProp name="filename">../../reports-sso/SamlssoAR-400.jtl</stringProp>
+          <stringProp name="filename">../../RC1/reports-sso/SamlssoAR-400.jtl</stringProp>
         </ResultCollector>
         <hashTree/>
       </hashTree>
