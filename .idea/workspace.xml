@@ -7,26 +7,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f14fbeea-6475-41ca-8d93-6677dd248430" name="Default" comment="Saml SSO-3">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/markdown-navigator/profiles_settings.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/JmeterTestArtifacts-1.0-SNAPSHOT.jar" afterPath="$PROJECT_DIR$/target/JmeterTestArtifacts-1.0-SNAPSHOT.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pom.xml" afterPath="$PROJECT_DIR$/pom.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/jmeter/RemoteUserStoreManager-AuthenticateUser.jmx" afterPath="$PROJECT_DIR$/src/test/jmeter/RemoteUserStoreManager-AuthenticateUser.jmx" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/jmeter/SAML2-SSO-RequestPath.jmx" afterPath="$PROJECT_DIR$/src/test/jmeter/SAML2-SSO-RequestPath.jmx" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/META-INF/DEPENDENCIES" afterPath="$PROJECT_DIR$/target/classes/META-INF/DEPENDENCIES" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/jmeter/bin/jmeter.properties" afterPath="$PROJECT_DIR$/target/jmeter/bin/jmeter.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/jmeter/bin/saveservice.properties" afterPath="$PROJECT_DIR$/target/jmeter/bin/saveservice.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/jmeter/bin/system.properties" afterPath="$PROJECT_DIR$/target/jmeter/bin/system.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/jmeter/bin/upgrade.properties" afterPath="$PROJECT_DIR$/target/jmeter/bin/upgrade.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/jmeter/testFiles/OAuth-AuthorizationCode.jmx" afterPath="$PROJECT_DIR$/target/jmeter/testFiles/OAuth-AuthorizationCode.jmx" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/jmeter/testFiles/RemoteUserStoreManager-AddUser.jmx" afterPath="$PROJECT_DIR$/target/jmeter/testFiles/RemoteUserStoreManager-AddUser.jmx" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/jmeter/testFiles/RemoteUserStoreManager-AuthenticateUser.jmx" afterPath="$PROJECT_DIR$/target/jmeter/testFiles/RemoteUserStoreManager-AuthenticateUser.jmx" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/jmeter/testFiles/SAML2-SSO-Redirect.jmx" afterPath="$PROJECT_DIR$/target/jmeter/testFiles/SAML2-SSO-Redirect.jmx" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/jmeter/testFiles/SAML2-SSO-RequestPath.jmx" afterPath="$PROJECT_DIR$/target/jmeter/testFiles/SAML2-SSO-RequestPath.jmx" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/jmeter/testFiles/SCIM-User-Add.jmx" afterPath="$PROJECT_DIR$/target/jmeter/testFiles/SCIM-User-Add.jmx" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/jmeter/testFiles/SCIM-User-Update.jmx" afterPath="$PROJECT_DIR$/target/jmeter/testFiles/SCIM-User-Update.jmx" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/jmeter/testFiles/passive-sts.jmx" afterPath="$PROJECT_DIR$/target/jmeter/testFiles/passive-sts.jmx" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/maven-archiver/pom.properties" afterPath="$PROJECT_DIR$/target/maven-archiver/pom.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/maven-shared-archive-resources/META-INF/DEPENDENCIES" afterPath="$PROJECT_DIR$/target/maven-shared-archive-resources/META-INF/DEPENDENCIES" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/test-classes/META-INF/DEPENDENCIES" afterPath="$PROJECT_DIR$/target/test-classes/META-INF/DEPENDENCIES" />
     </list>
     <ignored path="JmeterTestArtifacts.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -52,18 +37,18 @@
       <file leaf-file-name="pom.xml" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="570">
-              <caret line="50" column="20" selection-start-line="50" selection-start-column="20" selection-end-line="50" selection-end-column="20" />
+            <state relative-caret-position="300">
+              <caret line="32" column="100" selection-start-line="32" selection-start-column="100" selection-end-line="32" selection-end-column="100" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="samlRequest.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/resources/samlRequest.xml">
+      <file leaf-file-name="SAML2-SSO-Redirect.jmx" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/jmeter/SAML2-SSO-Redirect.jmx">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="15" selection-end-column="21" />
+            <state relative-caret-position="285">
+              <caret line="18" column="24" selection-start-line="18" selection-start-column="24" selection-end-line="18" selection-end-column="24" />
               <folding />
             </state>
           </provider>
@@ -102,8 +87,8 @@
       <file leaf-file-name="SAML2-SSO-RequestPath.jmx" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/jmeter/SAML2-SSO-RequestPath.jmx">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="395">
-              <caret line="499" column="31" selection-start-line="499" selection-start-column="31" selection-end-line="499" selection-end-column="31" />
+            <state relative-caret-position="259">
+              <caret line="490" column="38" selection-start-line="490" selection-start-column="38" selection-end-line="490" selection-end-column="47" />
               <folding />
             </state>
           </provider>
@@ -112,7 +97,7 @@
       <file leaf-file-name="OAuth-AuthorizationCode.jmx" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/jmeter/OAuth-AuthorizationCode.jmx">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="6720">
+            <state relative-caret-position="33585">
               <caret line="2239" column="33" selection-start-line="2239" selection-start-column="33" selection-end-line="2239" selection-end-column="33" />
               <folding />
             </state>
@@ -177,6 +162,7 @@
         <option value="$PROJECT_DIR$/src/test/jmeter/RemoteUserStoreManager-AuthenticateUser.jmx" />
         <option value="$PROJECT_DIR$/src/test/resources/samlRequest.xml" />
         <option value="$PROJECT_DIR$/src/test/jmeter/OAuth-AuthorizationCode.jmx" />
+        <option value="$PROJECT_DIR$/src/test/jmeter/SAML2-SSO-Redirect.jmx" />
         <option value="$PROJECT_DIR$/src/test/jmeter/SAML2-SSO-RequestPath.jmx" />
         <option value="$PROJECT_DIR$/pom.xml" />
       </list>
@@ -227,26 +213,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane">
-        <subPane>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="JmeterTestArtifacts" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="JmeterTestArtifacts" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewModuleNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Libraries" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewLibrariesNode" />
-            </PATH_ELEMENT>
-          </PATH>
-        </subPane>
-      </pane>
       <pane id="Scratches" />
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -325,6 +292,25 @@
             <PATH_ELEMENT>
               <option name="myItemId" value="resources" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
+      <pane id="Scope" />
+      <pane id="PackagesPane">
+        <subPane>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="JmeterTestArtifacts" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="JmeterTestArtifacts" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewModuleNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Libraries" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewLibrariesNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
@@ -920,7 +906,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="23" width="1680" height="1023" extended-state="0" />
+    <frame x="0" y="23" width="1680" height="1023" extended-state="6" />
     <editor active="false" />
     <layout>
       <window_info id="PlantUML" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -930,7 +916,7 @@
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.05799756" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.05860806" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.10633727" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="CheckStyle" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -1004,14 +990,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="480">
-          <caret line="32" column="57" selection-start-line="32" selection-start-column="57" selection-end-line="32" selection-end-column="57" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/target/jmeter/testFiles/SCIM-User-Add.jmx">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -1096,7 +1074,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="285">
           <caret line="19" column="9" selection-start-line="19" selection-start-column="9" selection-end-line="19" selection-end-column="9" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1151,7 +1128,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="285">
           <caret line="19" column="9" selection-start-line="19" selection-start-column="9" selection-end-line="19" selection-end-column="9" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1205,7 +1181,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1272,7 +1247,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="285">
           <caret line="19" column="9" selection-start-line="19" selection-start-column="9" selection-end-line="19" selection-end-column="9" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1327,14 +1301,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/jmeter/RemoteUserStoreManager-AuthenticateUser.jmx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="420">
-          <caret line="28" column="48" selection-start-line="28" selection-start-column="48" selection-end-line="28" selection-end-column="48" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/jmeter/test.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -1345,24 +1311,40 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/jmeter/OAuth-AuthorizationCode.jmx">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="6720">
+        <state relative-caret-position="33585">
           <caret line="2239" column="33" selection-start-line="2239" selection-start-column="33" selection-end-line="2239" selection-end-column="33" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/jmeter/SAML2-SSO-Redirect.jmx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="18" column="24" selection-start-line="18" selection-start-column="24" selection-end-line="18" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/jmeter/RemoteUserStoreManager-AuthenticateUser.jmx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="420">
+          <caret line="28" column="48" selection-start-line="28" selection-start-column="48" selection-end-line="28" selection-end-column="48" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/jmeter/SAML2-SSO-RequestPath.jmx">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="395">
-          <caret line="499" column="31" selection-start-line="499" selection-start-column="31" selection-end-line="499" selection-end-column="31" />
+        <state relative-caret-position="259">
+          <caret line="490" column="38" selection-start-line="490" selection-start-column="38" selection-end-line="490" selection-end-column="47" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="570">
-          <caret line="50" column="20" selection-start-line="50" selection-start-column="20" selection-end-line="50" selection-end-column="20" />
+        <state relative-caret-position="300">
+          <caret line="32" column="100" selection-start-line="32" selection-start-column="100" selection-end-line="32" selection-end-column="100" />
           <folding />
         </state>
       </provider>
