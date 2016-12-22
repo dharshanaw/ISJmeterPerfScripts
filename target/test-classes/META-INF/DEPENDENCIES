@@ -98,6 +98,10 @@ From: 'JUnit' (http://www.junit.org)
   - JUnit (http://junit.org) junit:junit:jar:3.8.1
     License: Common Public License Version 1.0  (http://www.opensource.org/licenses/cpl1.0.txt)
 
+From: 'Oracle Corporation' (http://www.oracle.com)
+  - MySQL Connector/J (http://dev.mysql.com/doc/connector-j/en/) mysql:mysql-connector-java:jar:5.1.40
+    License: The GNU General Public License, Version 2  (http://www.gnu.org/licenses/old-licenses/gpl-2.0.html)
+
 From: 'QOS.ch' (http://www.qos.ch)
   - Logback Classic Module (http://logback.qos.ch/logback-classic) ch.qos.logback:logback-classic:jar:1.1.7
     License: Eclipse Public License - v 1.0  (http://www.eclipse.org/legal/epl-v10.html)    License: GNU Lesser General Public License  (http://www.gnu.org/licenses/old-licenses/lgpl-2.1.html)
