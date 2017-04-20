@@ -30,10 +30,11 @@
                 </executions>
                 <configuration>
                     <testFilesIncluded>
-                        <jMeterTestFile>RemoteUserStoreManager-AuthenticateUser.jmx</jMeterTestFile>
+                        <!--<jMeterTestFile>RemoteUserStoreManager-AuthenticateUser.jmx</jMeterTestFile>-->
                         <!--<jMeterTestFile>OAuth-AuthorizationCode.jmx</jMeterTestFile>-->
                         <!--<jMeterTestFile>passive-sts.jmx</jMeterTestFile>-->
                         <!--<jMeterTestFile>SAML2-SSO-RequestPath.jmx</jMeterTestFile>-->
+                        <jMeterTestFile>view-apps.jmx</jMeterTestFile>
                     </testFilesIncluded>
                     <resultsFileFormat>csv</resultsFileFormat>
                 </configuration>
