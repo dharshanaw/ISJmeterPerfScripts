@@ -15,7 +15,7 @@
         <collectionProp name="Arguments.arguments">
           <elementProp name="nThreads" elementType="Argument">
             <stringProp name="Argument.name">nThreads</stringProp>
-            <stringProp name="Argument.value">20</stringProp>
+            <stringProp name="Argument.value">1</stringProp>
             <stringProp name="Argument.metadata">=</stringProp>
           </elementProp>
           <elementProp name="nUsers" elementType="Argument">
@@ -1165,7 +1165,7 @@ vars.put(&quot;saml-response&quot;,null);</stringProp>
         <longProp name="ThreadGroup.start_time">1490599026000</longProp>
         <longProp name="ThreadGroup.end_time">1490599026000</longProp>
         <boolProp name="ThreadGroup.scheduler">true</boolProp>
-        <stringProp name="ThreadGroup.duration">3600</stringProp>
+        <stringProp name="ThreadGroup.duration">200</stringProp>
         <stringProp name="ThreadGroup.delay"></stringProp>
       </ThreadGroup>
       <hashTree>
@@ -1624,12 +1624,12 @@ if(&quot;null&quot;.equals(sessionId)){
           <boolProp name="LoopController.continue_forever">false</boolProp>
           <intProp name="LoopController.loops">-1</intProp>
         </elementProp>
-        <stringProp name="ThreadGroup.num_threads">20</stringProp>
+        <stringProp name="ThreadGroup.num_threads">1</stringProp>
         <stringProp name="ThreadGroup.ramp_time">30</stringProp>
         <longProp name="ThreadGroup.start_time">1490599026000</longProp>
         <longProp name="ThreadGroup.end_time">1490599026000</longProp>
         <boolProp name="ThreadGroup.scheduler">true</boolProp>
-        <stringProp name="ThreadGroup.duration">10800</stringProp>
+        <stringProp name="ThreadGroup.duration">400</stringProp>
         <stringProp name="ThreadGroup.delay"></stringProp>
       </ThreadGroup>
       <hashTree>
