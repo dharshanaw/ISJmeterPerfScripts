@@ -1165,7 +1165,7 @@ vars.put(&quot;saml-response&quot;,null);</stringProp>
         <longProp name="ThreadGroup.start_time">1490599026000</longProp>
         <longProp name="ThreadGroup.end_time">1490599026000</longProp>
         <boolProp name="ThreadGroup.scheduler">true</boolProp>
-        <stringProp name="ThreadGroup.duration">30000</stringProp>
+        <stringProp name="ThreadGroup.duration">100000</stringProp>
         <stringProp name="ThreadGroup.delay"></stringProp>
       </ThreadGroup>
       <hashTree>
