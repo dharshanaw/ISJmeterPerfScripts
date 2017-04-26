@@ -19,7 +19,7 @@
             <plugin>
                 <groupId>com.lazerycode.jmeter</groupId>
                 <artifactId>jmeter-maven-plugin</artifactId>
-                <version>2.0.3</version>
+                <version>2.1.0</version>
                 <executions>
                     <execution>
                         <id>jmeter-tests</id>
@@ -34,7 +34,7 @@
                         <!--<jMeterTestFile>OAuth-AuthorizationCode.jmx</jMeterTestFile>-->
                         <!--<jMeterTestFile>passive-sts.jmx</jMeterTestFile>-->
                         <!--<jMeterTestFile>SAML2-SSO-RequestPath.jmx</jMeterTestFile>-->
-                        <jMeterTestFile>view-apps.jmx</jMeterTestFile>
+                        <jMeterTestFile>loginUser.jmx</jMeterTestFile>
                     </testFilesIncluded>
                     <resultsFileFormat>csv</resultsFileFormat>
                 </configuration>

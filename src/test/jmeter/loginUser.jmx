@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jmeterTestPlan version="1.2" properties="2.9" jmeter="3.0 r1743807">
+  <hashTree>
+    <Arguments guiclass="ArgumentsPanel" testclass="Arguments" testname="User Defined Variables" enabled="true">
+      <collectionProp name="Arguments.arguments">
+        <elementProp name="nThreads" elementType="Argument">
+          <stringProp name="Argument.name">nThreads</stringProp>
+          <stringProp name="Argument.value">10</stringProp>
+          <stringProp name="Argument.metadata">=</stringProp>
+        </elementProp>
+        <elementProp name="nUsers" elementType="Argument">
+          <stringProp name="Argument.name">nUsers</stringProp>
+          <stringProp name="Argument.value">3840</stringProp>
+          <stringProp name="Argument.metadata">=</stringProp>
+        </elementProp>
+        <elementProp name="nUsersPerTenant" elementType="Argument">
+          <stringProp name="Argument.name">nUsersPerTenant</stringProp>
+          <stringProp name="Argument.value">24</stringProp>
+          <stringProp name="Argument.metadata">=</stringProp>
+        </elementProp>
+        <elementProp name="tps" elementType="Argument">
+          <stringProp name="Argument.name">tps</stringProp>
+          <stringProp name="Argument.value">100</stringProp>
+          <stringProp name="Argument.metadata">=</stringProp>
+        </elementProp>
+        <elementProp name="nTenants" elementType="Argument">
+          <stringProp name="Argument.name">nTenants</stringProp>
+          <stringProp name="Argument.value"></stringProp>
+          <stringProp name="Argument.metadata">=</stringProp>
+        </elementProp>
+        <elementProp name="appManagerHost" elementType="Argument">
+          <stringProp name="Argument.name">appManagerHost</stringProp>
+          <stringProp name="Argument.value">ec2-184-73-129-221.compute-1.amazonaws.com</stringProp>
+          <stringProp name="Argument.metadata">=</stringProp>
+        </elementProp>
+        <elementProp name="appManagerPort" elementType="Argument">
+          <stringProp name="Argument.name">appManagerPort</stringProp>
+          <stringProp name="Argument.value">9443</stringProp>
+          <stringProp name="Argument.metadata">=</stringProp>
+        </elementProp>
+        <elementProp name="isHost" elementType="Argument">
+          <stringProp name="Argument.name">isHost</stringProp>
+          <stringProp name="Argument.value">ec2-107-23-18-56.compute-1.amazonaws.com</stringProp>
+          <stringProp name="Argument.metadata">=</stringProp>
+        </elementProp>
+        <elementProp name="isPort" elementType="Argument">
+          <stringProp name="Argument.name">isPort</stringProp>
+          <stringProp name="Argument.value">9443</stringProp>
+          <stringProp name="Argument.metadata">=</stringProp>
+        </elementProp>
+        <elementProp name="nApps" elementType="Argument">
+          <stringProp name="Argument.name">nApps</stringProp>
+          <stringProp name="Argument.value">250</stringProp>
+          <stringProp name="Argument.metadata">=</stringProp>
+        </elementProp>
+      </collectionProp>
+    </Arguments>
+    <hashTree/>
+  </hashTree>
+</jmeterTestPlan>
