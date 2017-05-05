@@ -17,7 +17,7 @@
           <boolProp name="LoopController.continue_forever">false</boolProp>
           <intProp name="LoopController.loops">-1</intProp>
         </elementProp>
-        <stringProp name="ThreadGroup.num_threads">10</stringProp>
+        <stringProp name="ThreadGroup.num_threads">5</stringProp>
         <stringProp name="ThreadGroup.ramp_time">30</stringProp>
         <longProp name="ThreadGroup.start_time">1490599026000</longProp>
         <longProp name="ThreadGroup.end_time">1490599026000</longProp>
@@ -436,7 +436,7 @@ if(&quot;null&quot;.equals(sessionId)){
               <bytes>true</bytes>
             </value>
           </objProp>
-          <stringProp name="filename">/Users/dharshana/aludev/login-jfr.jtl</stringProp>
+          <stringProp name="filename">/Users/dharshana/aludev/round2/login-jfr.jtl</stringProp>
         </ResultCollector>
         <hashTree/>
         <ResultCollector guiclass="GraphVisualizer" testclass="ResultCollector" testname="Graph Results" enabled="true">
