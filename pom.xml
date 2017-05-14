@@ -34,7 +34,7 @@
                         <!--<jMeterTestFile>OAuth-AuthorizationCode.jmx</jMeterTestFile>-->
                         <!--<jMeterTestFile>passive-sts.jmx</jMeterTestFile>-->
                         <!--<jMeterTestFile>SAML2-SSO-RequestPath.jmx</jMeterTestFile>-->
-                        <jMeterTestFile>LoginTestPlan.jmx</jMeterTestFile>
+                        <jMeterTestFile>APPM/LoginTestPlan.jmx</jMeterTestFile>
                     </testFilesIncluded>
                     <resultsFileFormat>csv</resultsFileFormat>
                 </configuration>
