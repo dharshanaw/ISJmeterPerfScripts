@@ -1637,7 +1637,7 @@ manager.add(cookie);</stringProp>
               <connectTime>true</connectTime>
             </value>
           </objProp>
-          <stringProp name="filename">loginTest.jtl</stringProp>
+          <stringProp name="filename">appvirw.jtl</stringProp>
         </ResultCollector>
         <hashTree/>
         <ResultCollector guiclass="SummaryReport" testclass="ResultCollector" testname="Summary Report" enabled="true">
@@ -1673,7 +1673,7 @@ manager.add(cookie);</stringProp>
               <connectTime>true</connectTime>
             </value>
           </objProp>
-          <stringProp name="filename"></stringProp>
+          <stringProp name="filename">/Users/dharshana/aludev/1.2.0/appview/final/loginTest.jtl</stringProp>
         </ResultCollector>
         <hashTree/>
       </hashTree>
