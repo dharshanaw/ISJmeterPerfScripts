@@ -1414,18 +1414,18 @@ if(&quot;null&quot;.equals(sessionId)){
             </HeaderManager>
             <hashTree/>
           </hashTree>
-        </hashTree>
-        <BeanShellSampler guiclass="BeanShellSamplerGui" testclass="BeanShellSampler" testname="initScript" enabled="true">
-          <stringProp name="BeanShellSampler.query">String sessionId = props.get(&quot;storeSessionID&quot;);
+          <BeanShellSampler guiclass="BeanShellSamplerGui" testclass="BeanShellSampler" testname="initScript" enabled="true">
+            <stringProp name="BeanShellSampler.query">String sessionId = props.get(&quot;storeSessionID&quot;);
 
 if(sessionId == null){
 	ctx.setRestartNextLoop(true);
 }</stringProp>
-          <stringProp name="BeanShellSampler.filename"></stringProp>
-          <stringProp name="BeanShellSampler.parameters"></stringProp>
-          <boolProp name="BeanShellSampler.resetInterpreter">false</boolProp>
-        </BeanShellSampler>
-        <hashTree/>
+            <stringProp name="BeanShellSampler.filename"></stringProp>
+            <stringProp name="BeanShellSampler.parameters"></stringProp>
+            <boolProp name="BeanShellSampler.resetInterpreter">false</boolProp>
+          </BeanShellSampler>
+          <hashTree/>
+        </hashTree>
         <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="webapps" enabled="true">
           <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" testname="User Defined Variables" enabled="true">
             <collectionProp name="Arguments.arguments"/>
