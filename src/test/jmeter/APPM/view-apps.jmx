@@ -591,7 +591,7 @@
         </ResultCollector>
         <hashTree/>
       </hashTree>
-      <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="ALULogin 1.2.0" enabled="false">
+      <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="ALULogin 1.2.0" enabled="true">
         <stringProp name="ThreadGroup.on_sample_error">continue</stringProp>
         <elementProp name="ThreadGroup.main_controller" elementType="LoopController" guiclass="LoopControlPanel" testclass="LoopController" testname="Loop Controller" enabled="true">
           <boolProp name="LoopController.continue_forever">false</boolProp>
@@ -1068,7 +1068,7 @@ if(&quot;null&quot;.equals(sessionId)){
         <longProp name="ThreadGroup.end_time">1494724532000</longProp>
         <boolProp name="ThreadGroup.scheduler">true</boolProp>
         <stringProp name="ThreadGroup.duration">1200</stringProp>
-        <stringProp name="ThreadGroup.delay"></stringProp>
+        <stringProp name="ThreadGroup.delay">1200</stringProp>
         <boolProp name="ThreadGroup.delayedStart">true</boolProp>
       </ThreadGroup>
       <hashTree>
@@ -1673,7 +1673,7 @@ manager.add(cookie);</stringProp>
               <connectTime>true</connectTime>
             </value>
           </objProp>
-          <stringProp name="filename">/Users/dharshana/aludev/1.2.0/appview/final/loginTest.jtl</stringProp>
+          <stringProp name="filename">/Users/dharshana/aludev/1.2.0/appview/appvirw.jtl</stringProp>
         </ResultCollector>
         <hashTree/>
       </hashTree>
