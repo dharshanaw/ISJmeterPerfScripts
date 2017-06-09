@@ -40,7 +40,7 @@
           </elementProp>
           <elementProp name="appManagerHost" elementType="Argument">
             <stringProp name="Argument.name">appManagerHost</stringProp>
-            <stringProp name="Argument.value">ec2-54-226-244-220.compute-1.amazonaws.com</stringProp>
+            <stringProp name="Argument.value">54.172.219.138</stringProp>
             <stringProp name="Argument.metadata">=</stringProp>
           </elementProp>
           <elementProp name="appManagerPort" elementType="Argument">
@@ -1019,7 +1019,7 @@ if(&quot;null&quot;.equals(sessionId)){
           <stringProp name="filename">loginTest.jtl</stringProp>
         </ResultCollector>
         <hashTree/>
-        <ResultCollector guiclass="SummaryReport" testclass="ResultCollector" testname="Summary Report" enabled="false">
+        <ResultCollector guiclass="SummaryReport" testclass="ResultCollector" testname="Summary Report" enabled="true">
           <boolProp name="ResultCollector.error_logging">false</boolProp>
           <objProp>
             <name>saveConfig</name>
