@@ -30,7 +30,7 @@
           </elementProp>
           <elementProp name="appManagerHost" elementType="Argument">
             <stringProp name="Argument.name">appManagerHost</stringProp>
-            <stringProp name="Argument.value">ec2-54-226-244-220.compute-1.amazonaws.com</stringProp>
+            <stringProp name="Argument.value">54.172.219.138</stringProp>
             <stringProp name="Argument.metadata">=</stringProp>
           </elementProp>
           <elementProp name="appManagerPort" elementType="Argument">
@@ -159,15 +159,51 @@
           <stringProp name="ConstantTimer.delay">5000</stringProp>
         </ConstantTimer>
         <hashTree/>
+        <ResultCollector guiclass="ViewResultsFullVisualizer" testclass="ResultCollector" testname="View Results Tree" enabled="true">
+          <boolProp name="ResultCollector.error_logging">false</boolProp>
+          <objProp>
+            <name>saveConfig</name>
+            <value class="SampleSaveConfiguration">
+              <time>true</time>
+              <latency>true</latency>
+              <timestamp>true</timestamp>
+              <success>true</success>
+              <label>true</label>
+              <code>true</code>
+              <message>true</message>
+              <threadName>true</threadName>
+              <dataType>true</dataType>
+              <encoding>false</encoding>
+              <assertions>true</assertions>
+              <subresults>true</subresults>
+              <responseData>false</responseData>
+              <samplerData>false</samplerData>
+              <xml>false</xml>
+              <fieldNames>true</fieldNames>
+              <responseHeaders>false</responseHeaders>
+              <requestHeaders>false</requestHeaders>
+              <responseDataOnError>false</responseDataOnError>
+              <saveAssertionResultsFailureMessage>true</saveAssertionResultsFailureMessage>
+              <assertionsResultsToSave>0</assertionsResultsToSave>
+              <bytes>true</bytes>
+              <sentBytes>true</sentBytes>
+              <threadCounts>true</threadCounts>
+              <idleTime>true</idleTime>
+              <connectTime>true</connectTime>
+            </value>
+          </objProp>
+          <stringProp name="filename"></stringProp>
+        </ResultCollector>
+        <hashTree/>
       </hashTree>
       <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="add-users" enabled="false">
         <stringProp name="ThreadGroup.on_sample_error">continue</stringProp>
         <elementProp name="ThreadGroup.main_controller" elementType="LoopController" guiclass="LoopControlPanel" testclass="LoopController" testname="Loop Controller" enabled="true">
           <boolProp name="LoopController.continue_forever">false</boolProp>
-          <stringProp name="LoopController.loops">1</stringProp>
+          <stringProp name="LoopController.loops">${nTenants}</stringProp>
         </elementProp>
-        <stringProp name="ThreadGroup.num_threads">${nTenants}</stringProp>
-        <stringProp name="ThreadGroup.ramp_time">${nTenants}</stringProp>
+        <stringProp name="ThreadGroup.num_threads">5</stringProp>
+        <stringProp name="ThreadGroup.ramp_time">30</stringProp>
         <longProp name="ThreadGroup.start_time">1489822756000</longProp>
         <longProp name="ThreadGroup.end_time">1489822756000</longProp>
         <boolProp name="ThreadGroup.scheduler">false</boolProp>
@@ -1608,10 +1644,10 @@
         <stringProp name="ThreadGroup.on_sample_error">continue</stringProp>
         <elementProp name="ThreadGroup.main_controller" elementType="LoopController" guiclass="LoopControlPanel" testclass="LoopController" testname="Loop Controller" enabled="true">
           <boolProp name="LoopController.continue_forever">false</boolProp>
-          <stringProp name="LoopController.loops">1</stringProp>
+          <stringProp name="LoopController.loops">100</stringProp>
         </elementProp>
         <stringProp name="ThreadGroup.num_threads">1</stringProp>
-        <stringProp name="ThreadGroup.ramp_time">1</stringProp>
+        <stringProp name="ThreadGroup.ramp_time">15</stringProp>
         <longProp name="ThreadGroup.start_time">1494430389000</longProp>
         <longProp name="ThreadGroup.end_time">1494430389000</longProp>
         <boolProp name="ThreadGroup.scheduler">false</boolProp>
@@ -1620,7 +1656,7 @@
       </ThreadGroup>
       <hashTree>
         <CounterConfig guiclass="CounterConfigGui" testclass="CounterConfig" testname="Counter" enabled="true">
-          <stringProp name="CounterConfig.start">115</stringProp>
+          <stringProp name="CounterConfig.start">421</stringProp>
           <stringProp name="CounterConfig.end">1000</stringProp>
           <stringProp name="CounterConfig.incr">1</stringProp>
           <stringProp name="CounterConfig.name">appCount</stringProp>
@@ -1681,7 +1717,7 @@
                   <boolProp name="HTTPArgument.always_encode">false</boolProp>
                   <stringProp name="Argument.value">{&#xd;
 	&quot;callbackUrl&quot;: &quot;www.google.lk&quot;,&#xd;
-	&quot;clientName&quot;: &quot;aluStore1252${appCount}&quot;,&#xd;
+	&quot;clientName&quot;: &quot;aluStoreClientApp${__Random(1,1000)}&quot;,&#xd;
 	&quot;tokenScope&quot;: &quot;Production&quot;,&#xd;
 	&quot;owner&quot;: &quot;admin&quot;,&#xd;
 	&quot;grantType&quot;: &quot;password refresh_token&quot;,&#xd;
@@ -1691,7 +1727,7 @@
                 </elementProp>
               </collectionProp>
             </elementProp>
-            <stringProp name="HTTPSampler.domain">ec2-54-226-244-220.compute-1.amazonaws.com</stringProp>
+            <stringProp name="HTTPSampler.domain">${appManagerHost}</stringProp>
             <stringProp name="HTTPSampler.port">9763</stringProp>
             <stringProp name="HTTPSampler.protocol">http</stringProp>
             <stringProp name="HTTPSampler.contentEncoding"></stringProp>
@@ -1706,6 +1742,12 @@
             <stringProp name="HTTPSampler.response_timeout"></stringProp>
           </HTTPSamplerProxy>
           <hashTree>
+            <JSONPostProcessor guiclass="JSONPostProcessorGui" testclass="JSONPostProcessor" testname="clientIdExtractor" enabled="true">
+              <stringProp name="JSONPostProcessor.referenceNames">clientId</stringProp>
+              <stringProp name="JSONPostProcessor.jsonPathExprs">clientId</stringProp>
+              <stringProp name="JSONPostProcessor.match_numbers">1</stringProp>
+            </JSONPostProcessor>
+            <hashTree/>
             <JSONPostProcessor guiclass="JSONPostProcessorGui" testclass="JSONPostProcessor" testname="clientSecretExtactor" enabled="true">
               <stringProp name="JSONPostProcessor.referenceNames">clientSecret</stringProp>
               <stringProp name="JSONPostProcessor.jsonPathExprs">clientSecret</stringProp>
@@ -1725,12 +1767,6 @@
               </collectionProp>
             </HeaderManager>
             <hashTree/>
-            <JSONPostProcessor guiclass="JSONPostProcessorGui" testclass="JSONPostProcessor" testname="clientIdExtractor" enabled="true">
-              <stringProp name="JSONPostProcessor.referenceNames">clientId</stringProp>
-              <stringProp name="JSONPostProcessor.jsonPathExprs">clientId</stringProp>
-              <stringProp name="JSONPostProcessor.match_numbers">1</stringProp>
-            </JSONPostProcessor>
-            <hashTree/>
           </hashTree>
           <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="getAccessToken" enabled="true">
             <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
@@ -1743,7 +1779,7 @@
                 </elementProp>
               </collectionProp>
             </elementProp>
-            <stringProp name="HTTPSampler.domain">ec2-54-226-244-220.compute-1.amazonaws.com</stringProp>
+            <stringProp name="HTTPSampler.domain">${appManagerHost}</stringProp>
             <stringProp name="HTTPSampler.port">9763</stringProp>
             <stringProp name="HTTPSampler.protocol">http</stringProp>
             <stringProp name="HTTPSampler.contentEncoding"></stringProp>
@@ -1758,18 +1794,11 @@
             <stringProp name="HTTPSampler.response_timeout"></stringProp>
           </HTTPSamplerProxy>
           <hashTree>
-            <JSONPostProcessor guiclass="JSONPostProcessorGui" testclass="JSONPostProcessor" testname="JSON Extractor" enabled="true">
-              <stringProp name="JSONPostProcessor.referenceNames">access_token</stringProp>
-              <stringProp name="JSONPostProcessor.jsonPathExprs">access_token</stringProp>
-              <stringProp name="JSONPostProcessor.match_numbers">1</stringProp>
-              <stringProp name="Scope.variable"></stringProp>
-            </JSONPostProcessor>
-            <hashTree/>
             <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header Manager" enabled="true">
               <collectionProp name="HeaderManager.headers">
                 <elementProp name="" elementType="Header">
                   <stringProp name="Header.name">Authorization</stringProp>
-                  <stringProp name="Header.value">Basic bTYwVVN4WEM5bFhIYWp6d2VGRGNBeGZHZjdJYTpoXzBmaFo3TGNjQjBJdVFmc1ZsOHprYXRla1lh</stringProp>
+                  <stringProp name="Header.value">Basic ${__base64Encode(${clientId}:${clientSecret})}</stringProp>
                 </elementProp>
                 <elementProp name="" elementType="Header">
                   <stringProp name="Header.name">Content-Type</stringProp>
@@ -1777,6 +1806,13 @@
                 </elementProp>
               </collectionProp>
             </HeaderManager>
+            <hashTree/>
+            <JSONPostProcessor guiclass="JSONPostProcessorGui" testclass="JSONPostProcessor" testname="JSON Extractor" enabled="true">
+              <stringProp name="JSONPostProcessor.referenceNames">access_token</stringProp>
+              <stringProp name="JSONPostProcessor.jsonPathExprs">access_token</stringProp>
+              <stringProp name="JSONPostProcessor.match_numbers">1</stringProp>
+              <stringProp name="Scope.variable"></stringProp>
+            </JSONPostProcessor>
             <hashTree/>
             <ResultCollector guiclass="ViewResultsFullVisualizer" testclass="ResultCollector" testname="View Results Tree" enabled="true">
               <boolProp name="ResultCollector.error_logging">false</boolProp>
@@ -1829,6 +1865,54 @@ vars.put(&quot;encodedAuth&quot;,new String(encryptedUid));
 props.put(&quot;erroriden&quot;, vars.get(&quot;encodedAuth&quot;));</stringProp>
           </BeanShellPreProcessor>
           <hashTree/>
+          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="AddBanner" enabled="true">
+            <elementProp name="HTTPsampler.Files" elementType="HTTPFileArgs">
+              <collectionProp name="HTTPFileArgs.files">
+                <elementProp name="/Users/dharshana/aludev/ActiveMQ-logo-2.png" elementType="HTTPFileArg">
+                  <stringProp name="File.path">/Users/dharshana/aludev/ActiveMQ-logo-2.png</stringProp>
+                  <stringProp name="File.paramname">file</stringProp>
+                  <stringProp name="File.mimetype">image/png</stringProp>
+                </elementProp>
+              </collectionProp>
+            </elementProp>
+            <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" testname="User Defined Variables" enabled="true">
+              <collectionProp name="Arguments.arguments"/>
+            </elementProp>
+            <stringProp name="HTTPSampler.domain">${appManagerHost}</stringProp>
+            <stringProp name="HTTPSampler.port">9763</stringProp>
+            <stringProp name="HTTPSampler.protocol">http</stringProp>
+            <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+            <stringProp name="HTTPSampler.path">/api/appm/publisher/v1.1/apps/static-contents?appType=webapp</stringProp>
+            <stringProp name="HTTPSampler.method">POST</stringProp>
+            <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+            <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+            <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+            <boolProp name="HTTPSampler.DO_MULTIPART_POST">true</boolProp>
+            <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+            <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+            <stringProp name="HTTPSampler.response_timeout"></stringProp>
+          </HTTPSamplerProxy>
+          <hashTree>
+            <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header Manager" enabled="true">
+              <collectionProp name="HeaderManager.headers">
+                <elementProp name="" elementType="Header">
+                  <stringProp name="Header.name">Authorization</stringProp>
+                  <stringProp name="Header.value">Bearer ${access_token}</stringProp>
+                </elementProp>
+                <elementProp name="" elementType="Header">
+                  <stringProp name="Header.name">Content-Type</stringProp>
+                  <stringProp name="Header.value">multipart/form-data</stringProp>
+                </elementProp>
+              </collectionProp>
+            </HeaderManager>
+            <hashTree/>
+            <JSONPostProcessor guiclass="JSONPostProcessorGui" testclass="JSONPostProcessor" testname="Icon_Id_Extractor" enabled="true">
+              <stringProp name="JSONPostProcessor.referenceNames">iconId</stringProp>
+              <stringProp name="JSONPostProcessor.jsonPathExprs">id</stringProp>
+              <stringProp name="JSONPostProcessor.match_numbers">1</stringProp>
+            </JSONPostProcessor>
+            <hashTree/>
+          </hashTree>
         </hashTree>
         <ResultCollector guiclass="TableVisualizer" testclass="ResultCollector" testname="View Results in Table" enabled="true">
           <boolProp name="ResultCollector.error_logging">false</boolProp>
@@ -1957,23 +2041,20 @@ props.put(&quot;erroriden&quot;, vars.get(&quot;encodedAuth&quot;));</stringProp
       &quot;package&quot;:&quot;home.jmstudios.calc&quot;,&#xd;
       &quot;version&quot;:&quot;1.0&quot;&#xd;
    },&#xd;
-   &quot;name&quot;:&quot;AluCreatAppt${appCount}&quot;,&#xd;
+   &quot;name&quot;:&quot;AluWebApp${appCount}&quot;,&#xd;
    &quot;provider&quot;:&quot;admin&quot;,&#xd;
    &quot;platform&quot;:&quot;Webapp&quot;,&#xd;
    &quot;version&quot;:&quot;1.0.0&quot;,&#xd;
-   &quot;banner&quot;:&quot;/publisher/apis/icon/Yin-Yang-True-false-icon.png&quot;,&#xd;
-   &quot;thumbnailUrl&quot;:&quot;/publisher/apis/icon/Yin-Yang-True-false-icon.png&quot;,&#xd;
-   &quot;icon&quot;:&quot;/publisher/apis/icon/Yin-Yang-True-false-icon.png&quot;,&#xd;
-   &quot;screenshots&quot;:[&#xd;
-      &quot;/publisher/apis/icon/Yin-Yang-True-false-icon.png&quot;&#xd;
-   ],&#xd;
-   &quot;displayName&quot;:&quot;AluCreatAppt${appCount}&quot;,&#xd;
+   &quot;banner&quot;:&quot;${iconId}&quot;,&#xd;
+   &quot;thumbnailUrl&quot;:&quot;${iconId}&quot;,&#xd;
+   &quot;icon&quot;:&quot;${iconId}&quot;,&#xd;
+   &quot;displayName&quot;:&quot;AluWebApp${appCount}&quot;,&#xd;
    &quot;description&quot;:&quot;sample calculator application&quot;,&#xd;
    &quot;category&quot;:&quot;Business&quot;,&#xd;
-   &quot;context&quot;:&quot;/aluCreatAppt${appCount}&quot;,&#xd;
+   &quot;context&quot;:&quot;/aluwebapp${appCount}&quot;,&#xd;
    &quot;transport&quot;:&quot;http&quot;,&#xd;
    &quot;isSite&quot;:&quot;false&quot;,&#xd;
-   &quot;appUrL&quot;:&quot;http://www.google.lk&quot;,&#xd;
+   &quot;appUrL&quot;:&quot;https://www.google.lk&quot;,&#xd;
    &quot;marketType&quot;:&quot;enterprise&quot;,&#xd;
    &quot;category&quot;:&quot;public&quot;&#xd;
 }</stringProp>
@@ -1981,7 +2062,7 @@ props.put(&quot;erroriden&quot;, vars.get(&quot;encodedAuth&quot;));</stringProp
               </elementProp>
             </collectionProp>
           </elementProp>
-          <stringProp name="HTTPSampler.domain">ec2-54-226-244-220.compute-1.amazonaws.com</stringProp>
+          <stringProp name="HTTPSampler.domain">${appManagerHost}</stringProp>
           <stringProp name="HTTPSampler.port">9763</stringProp>
           <stringProp name="HTTPSampler.protocol">http</stringProp>
           <stringProp name="HTTPSampler.contentEncoding"></stringProp>
@@ -2053,6 +2134,50 @@ props.put(&quot;erroriden&quot;, vars.get(&quot;encodedAuth&quot;));</stringProp
           </ResultCollector>
           <hashTree/>
         </hashTree>
+        <ConstantTimer guiclass="ConstantTimerGui" testclass="ConstantTimer" testname="Constant Timer" enabled="true">
+          <stringProp name="ConstantTimer.delay">100</stringProp>
+        </ConstantTimer>
+        <hashTree/>
+        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="AddTags" enabled="true">
+          <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
+          <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
+            <collectionProp name="Arguments.arguments">
+              <elementProp name="" elementType="HTTPArgument">
+                <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                <stringProp name="Argument.value">{&quot;tags&quot;:[&quot;tagA&quot;,&quot;tagB&quot;,&quot;tagC&quot;]}</stringProp>
+                <stringProp name="Argument.metadata">=</stringProp>
+              </elementProp>
+            </collectionProp>
+          </elementProp>
+          <stringProp name="HTTPSampler.domain">${appManagerHost}</stringProp>
+          <stringProp name="HTTPSampler.port">9763</stringProp>
+          <stringProp name="HTTPSampler.protocol">http</stringProp>
+          <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+          <stringProp name="HTTPSampler.path">/api/appm/publisher/v1.1/apps/webapp/id/${appId}/tags</stringProp>
+          <stringProp name="HTTPSampler.method">PUT</stringProp>
+          <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+          <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+          <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+          <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+          <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+          <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+          <stringProp name="HTTPSampler.response_timeout"></stringProp>
+        </HTTPSamplerProxy>
+        <hashTree>
+          <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header Manager" enabled="true">
+            <collectionProp name="HeaderManager.headers">
+              <elementProp name="Authorization" elementType="Header">
+                <stringProp name="Header.name">Authorization</stringProp>
+                <stringProp name="Header.value">Bearer ${access_token}</stringProp>
+              </elementProp>
+              <elementProp name="Content-Type" elementType="Header">
+                <stringProp name="Header.name">Content-Type</stringProp>
+                <stringProp name="Header.value">application/json</stringProp>
+              </elementProp>
+            </collectionProp>
+          </HeaderManager>
+          <hashTree/>
+        </hashTree>
         <DebugSampler guiclass="TestBeanGUI" testclass="DebugSampler" testname="Debug Sampler3" enabled="true">
           <boolProp name="displayJMeterProperties">false</boolProp>
           <boolProp name="displayJMeterVariables">true</boolProp>
@@ -2096,11 +2221,15 @@ props.put(&quot;erroriden&quot;, vars.get(&quot;encodedAuth&quot;));</stringProp
           </ResultCollector>
           <hashTree/>
         </hashTree>
+        <ConstantTimer guiclass="ConstantTimerGui" testclass="ConstantTimer" testname="Constant Timer" enabled="true">
+          <stringProp name="ConstantTimer.delay">50</stringProp>
+        </ConstantTimer>
+        <hashTree/>
         <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="LC_Submit_for_Review" enabled="true">
           <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" testname="User Defined Variables" enabled="true">
             <collectionProp name="Arguments.arguments"/>
           </elementProp>
-          <stringProp name="HTTPSampler.domain">ec2-54-226-244-220.compute-1.amazonaws.com</stringProp>
+          <stringProp name="HTTPSampler.domain">${appManagerHost}</stringProp>
           <stringProp name="HTTPSampler.port">9763</stringProp>
           <stringProp name="HTTPSampler.protocol">http</stringProp>
           <stringProp name="HTTPSampler.contentEncoding"></stringProp>
@@ -2165,11 +2294,15 @@ props.put(&quot;erroriden&quot;, vars.get(&quot;encodedAuth&quot;));</stringProp
           </ResultCollector>
           <hashTree/>
         </hashTree>
+        <ConstantTimer guiclass="ConstantTimerGui" testclass="ConstantTimer" testname="Constant Timer" enabled="true">
+          <stringProp name="ConstantTimer.delay">50</stringProp>
+        </ConstantTimer>
+        <hashTree/>
         <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="LC_Approve" enabled="true">
           <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" testname="User Defined Variables" enabled="true">
             <collectionProp name="Arguments.arguments"/>
           </elementProp>
-          <stringProp name="HTTPSampler.domain">ec2-54-226-244-220.compute-1.amazonaws.com</stringProp>
+          <stringProp name="HTTPSampler.domain">${appManagerHost}</stringProp>
           <stringProp name="HTTPSampler.port">9763</stringProp>
           <stringProp name="HTTPSampler.protocol">http</stringProp>
           <stringProp name="HTTPSampler.contentEncoding"></stringProp>
@@ -2198,11 +2331,15 @@ props.put(&quot;erroriden&quot;, vars.get(&quot;encodedAuth&quot;));</stringProp
           </HeaderManager>
           <hashTree/>
         </hashTree>
+        <ConstantTimer guiclass="ConstantTimerGui" testclass="ConstantTimer" testname="Constant Timer" enabled="true">
+          <stringProp name="ConstantTimer.delay">50</stringProp>
+        </ConstantTimer>
+        <hashTree/>
         <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="LC_Publish" enabled="true">
           <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" testname="User Defined Variables" enabled="true">
             <collectionProp name="Arguments.arguments"/>
           </elementProp>
-          <stringProp name="HTTPSampler.domain">ec2-54-226-244-220.compute-1.amazonaws.com</stringProp>
+          <stringProp name="HTTPSampler.domain">${appManagerHost}</stringProp>
           <stringProp name="HTTPSampler.port">9763</stringProp>
           <stringProp name="HTTPSampler.protocol">http</stringProp>
           <stringProp name="HTTPSampler.contentEncoding"></stringProp>
@@ -2231,6 +2368,19 @@ props.put(&quot;erroriden&quot;, vars.get(&quot;encodedAuth&quot;));</stringProp
           </HeaderManager>
           <hashTree/>
         </hashTree>
+        <ConstantThroughputTimer guiclass="TestBeanGUI" testclass="ConstantThroughputTimer" testname="Constant Throughput Timer" enabled="false">
+          <intProp name="calcMode">0</intProp>
+          <doubleProp>
+            <name>throughput</name>
+            <value>0.0</value>
+            <savedValue>0.0</savedValue>
+          </doubleProp>
+        </ConstantThroughputTimer>
+        <hashTree/>
+        <ConstantTimer guiclass="ConstantTimerGui" testclass="ConstantTimer" testname="Constant Timer" enabled="true">
+          <stringProp name="ConstantTimer.delay">20</stringProp>
+        </ConstantTimer>
+        <hashTree/>
       </hashTree>
     </hashTree>
     <WorkBench guiclass="WorkBenchGui" testclass="WorkBench" testname="WorkBench" enabled="true">
