@@ -747,7 +747,7 @@ if(&quot;null&quot;.equals(sessionId)){
         <stringProp name="ThreadGroup.ramp_time">30</stringProp>
         <longProp name="ThreadGroup.start_time">1494724532000</longProp>
         <longProp name="ThreadGroup.end_time">1494724532000</longProp>
-        <boolProp name="ThreadGroup.scheduler">false</boolProp>
+        <boolProp name="ThreadGroup.scheduler">true</boolProp>
         <stringProp name="ThreadGroup.duration">1200</stringProp>
         <stringProp name="ThreadGroup.delay"></stringProp>
       </ThreadGroup>
@@ -1150,7 +1150,7 @@ if(&quot;null&quot;.equals(sessionId)){
           <stringProp name="filename">loginTest.jtl</stringProp>
         </ResultCollector>
         <hashTree/>
-        <ResultCollector guiclass="SummaryReport" testclass="ResultCollector" testname="Summary Report" enabled="false">
+        <ResultCollector guiclass="SummaryReport" testclass="ResultCollector" testname="Summary Report" enabled="true">
           <boolProp name="ResultCollector.error_logging">false</boolProp>
           <objProp>
             <name>saveConfig</name>
@@ -1183,7 +1183,7 @@ if(&quot;null&quot;.equals(sessionId)){
               <connectTime>true</connectTime>
             </value>
           </objProp>
-          <stringProp name="filename">/Users/dharshana/aludev/1.2.0/final/10-10/appvirw.jtl</stringProp>
+          <stringProp name="filename">/Users/dharshana/aludev/summery/loginTest.jtl</stringProp>
         </ResultCollector>
         <hashTree/>
       </hashTree>
