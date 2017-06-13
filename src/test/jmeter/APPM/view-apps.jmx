@@ -602,7 +602,7 @@
         <longProp name="ThreadGroup.start_time">1494724532000</longProp>
         <longProp name="ThreadGroup.end_time">1494724532000</longProp>
         <boolProp name="ThreadGroup.scheduler">true</boolProp>
-        <stringProp name="ThreadGroup.duration">600</stringProp>
+        <stringProp name="ThreadGroup.duration">5</stringProp>
         <stringProp name="ThreadGroup.delay"></stringProp>
         <boolProp name="ThreadGroup.delayedStart">true</boolProp>
       </ThreadGroup>
@@ -1068,7 +1068,7 @@ if(&quot;null&quot;.equals(sessionId)){
         <longProp name="ThreadGroup.end_time">1494724532000</longProp>
         <boolProp name="ThreadGroup.scheduler">true</boolProp>
         <stringProp name="ThreadGroup.duration">1200</stringProp>
-        <stringProp name="ThreadGroup.delay">600</stringProp>
+        <stringProp name="ThreadGroup.delay">5</stringProp>
         <boolProp name="ThreadGroup.delayedStart">true</boolProp>
       </ThreadGroup>
       <hashTree>
@@ -1533,7 +1533,7 @@ if(&quot;null&quot;.equals(sessionId)){
         <longProp name="ThreadGroup.end_time">1494724532000</longProp>
         <boolProp name="ThreadGroup.scheduler">true</boolProp>
         <stringProp name="ThreadGroup.duration">1200</stringProp>
-        <stringProp name="ThreadGroup.delay">600</stringProp>
+        <stringProp name="ThreadGroup.delay">5</stringProp>
       </ThreadGroup>
       <hashTree>
         <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="HTTP Request" enabled="false">
