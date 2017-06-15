@@ -1527,7 +1527,7 @@ if(&quot;null&quot;.equals(sessionId)){
           <boolProp name="LoopController.continue_forever">false</boolProp>
           <intProp name="LoopController.loops">-1</intProp>
         </elementProp>
-        <stringProp name="ThreadGroup.num_threads">10</stringProp>
+        <stringProp name="ThreadGroup.num_threads">15</stringProp>
         <stringProp name="ThreadGroup.ramp_time">10</stringProp>
         <longProp name="ThreadGroup.start_time">1494724532000</longProp>
         <longProp name="ThreadGroup.end_time">1494724532000</longProp>
@@ -2154,7 +2154,7 @@ manager.add(cookie);</stringProp>
               <connectTime>true</connectTime>
             </value>
           </objProp>
-          <stringProp name="filename">/Users/dharshana/software/apache-jmeter-3.2/appvirw.jtl</stringProp>
+          <stringProp name="filename">/Users/dharshana/aludev/final/loginTest2.jtl</stringProp>
         </ResultCollector>
         <hashTree/>
         <ResultCollector guiclass="ViewResultsFullVisualizer" testclass="ResultCollector" testname="View Results Tree" enabled="false">
