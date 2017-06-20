@@ -2292,7 +2292,7 @@ if(sessionId == null){
           <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" testname="User Defined Variables" enabled="true">
             <collectionProp name="Arguments.arguments"/>
           </elementProp>
-          <stringProp name="HTTPSampler.domain">${appManagerHost}</stringProp>
+          <stringProp name="HTTPSampler.domain">ec2-54-236-105-167.compute-1.amazonaws.com</stringProp>
           <stringProp name="HTTPSampler.port">9443</stringProp>
           <stringProp name="HTTPSampler.protocol">https</stringProp>
           <stringProp name="HTTPSampler.contentEncoding"></stringProp>
