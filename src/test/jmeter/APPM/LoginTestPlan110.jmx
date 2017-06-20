@@ -1927,7 +1927,7 @@ if(&quot;null&quot;.equals(sessionId)){
             <connectTime>true</connectTime>
           </value>
         </objProp>
-        <stringProp name="filename">/Users/dharshana/aludev/final/login110.jtl</stringProp>
+        <stringProp name="filename">/Users/dharshana/aludev/final/webapp/login110-2.jtl</stringProp>
       </ResultCollector>
       <hashTree/>
       <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="ALUAppview1.2.0" enabled="true">
@@ -1936,7 +1936,7 @@ if(&quot;null&quot;.equals(sessionId)){
           <boolProp name="LoopController.continue_forever">false</boolProp>
           <intProp name="LoopController.loops">-1</intProp>
         </elementProp>
-        <stringProp name="ThreadGroup.num_threads">10</stringProp>
+        <stringProp name="ThreadGroup.num_threads">15</stringProp>
         <stringProp name="ThreadGroup.ramp_time">10</stringProp>
         <longProp name="ThreadGroup.start_time">1494724532000</longProp>
         <longProp name="ThreadGroup.end_time">1494724532000</longProp>
