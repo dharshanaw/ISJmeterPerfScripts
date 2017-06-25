@@ -35,7 +35,7 @@
                         <!--<jMeterTestFile>passive-sts.jmx</jMeterTestFile>-->
                         <!--<jMeterTestFile>SAML2-SSO-RequestPath.jmx</jMeterTestFile>-->
                         <!--<jMeterTestFile>APPM/LoginTestPlan110.jmx</jMeterTestFile>-->
-                        <jMeterTestFile>goldman/authticationScript.jmx</jMeterTestFile>
+                        <jMeterTestFile>goldman/autherization.jmx</jMeterTestFile>
                         <!--<jMeterTestFile>APPM/view-apps.jmx</jMeterTestFile>-->
                     </testFilesIncluded>
                     <resultsFileFormat>csv</resultsFileFormat>
