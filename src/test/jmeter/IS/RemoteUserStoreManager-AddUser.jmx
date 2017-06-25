@@ -25,7 +25,7 @@
           </elementProp>
           <elementProp name="host" elementType="Argument">
             <stringProp name="Argument.name">host</stringProp>
-            <stringProp name="Argument.value">192.168.57.198</stringProp>
+            <stringProp name="Argument.value">ec2-54-145-15-251.compute-1.amazonaws.com</stringProp>
             <stringProp name="Argument.metadata">=</stringProp>
           </elementProp>
           <elementProp name="port" elementType="Argument">
@@ -50,13 +50,13 @@
         <stringProp name="ThreadGroup.on_sample_error">continue</stringProp>
         <elementProp name="ThreadGroup.main_controller" elementType="LoopController" guiclass="LoopControlPanel" testclass="LoopController" testname="Loop Controller" enabled="true">
           <boolProp name="LoopController.continue_forever">false</boolProp>
-          <intProp name="LoopController.loops">-1</intProp>
+          <stringProp name="LoopController.loops">40000</stringProp>
         </elementProp>
-        <stringProp name="ThreadGroup.num_threads">100</stringProp>
+        <stringProp name="ThreadGroup.num_threads">5</stringProp>
         <stringProp name="ThreadGroup.ramp_time">${ramp_up}</stringProp>
         <longProp name="ThreadGroup.start_time">1439374326000</longProp>
         <longProp name="ThreadGroup.end_time">1439374326000</longProp>
-        <boolProp name="ThreadGroup.scheduler">true</boolProp>
+        <boolProp name="ThreadGroup.scheduler">false</boolProp>
         <stringProp name="ThreadGroup.duration">3600</stringProp>
         <stringProp name="ThreadGroup.delay">50</stringProp>
       </ThreadGroup>
@@ -74,7 +74,7 @@
           <collectionProp name="HeaderManager.headers">
             <elementProp name="" elementType="Header">
               <stringProp name="Header.name">Authorization</stringProp>
-              <stringProp name="Header.value">Basic YWRtaW46YWRtaW4=</stringProp>
+              <stringProp name="Header.value">Basic dGVzdC1hZG1pbjphZG1pbg==</stringProp>
             </elementProp>
           </collectionProp>
         </HeaderManager>
@@ -88,11 +88,12 @@
    &lt;soapenv:Header/&gt;
    &lt;soapenv:Body&gt;
       &lt;ser:addUser&gt;
-         &lt;ser:userName&gt;user100${user_index}&lt;/ser:userName&gt;
-         &lt;ser:credential&gt;password&lt;/ser:credential&gt;
-         &lt;ser:claims&gt;
+         &lt;ser:userName&gt;golduser2_${user_index}&lt;/ser:userName&gt;
+         &lt;ser:credential&gt;password1&lt;/ser:credential&gt;
+         &lt;ser:roleList&gt;goldrole&lt;/ser:roleList&gt;
+      &lt;ser:claims&gt;
             &lt;xsd:claimURI&gt;http://wso2.org/claims/emailaddress&lt;/xsd:claimURI&gt;
-            &lt;xsd:value&gt;user_${__threadNum}_${user_index}@test.com&lt;/xsd:value&gt;
+            &lt;xsd:value&gt;usergold${user_index}@test.com&lt;/xsd:value&gt;
          &lt;/ser:claims&gt;
          &lt;ser:claims&gt;
             &lt;xsd:claimURI&gt;http://wso2.org/claims/lastname&lt;/xsd:claimURI&gt;
@@ -100,36 +101,8 @@
          &lt;/ser:claims&gt;
          &lt;ser:claims&gt;
             &lt;xsd:claimURI&gt;http://wso2.org/claims/givenname&lt;/xsd:claimURI&gt;
-            &lt;xsd:value&gt;givenname&lt;/xsd:value&gt;
-         &lt;/ser:claims&gt;
-         &lt;ser:claims&gt;
-            &lt;xsd:claimURI&gt;http://wso2.org/claims/streetaddress&lt;/xsd:claimURI&gt;
-            &lt;xsd:value&gt;address&lt;/xsd:value&gt;
-         &lt;/ser:claims&gt;
-         &lt;ser:claims&gt;
-            &lt;xsd:claimURI&gt;http://wso2.org/claims/postalcode&lt;/xsd:claimURI&gt;
-            &lt;xsd:value&gt;10120&lt;/xsd:value&gt;
-         &lt;/ser:claims&gt;
-         &lt;ser:claims&gt;
-            &lt;xsd:claimURI&gt;http://wso2.org/claims/displayName&lt;/xsd:claimURI&gt;
-            &lt;xsd:value&gt;displayName&lt;/xsd:value&gt;
-         &lt;/ser:claims&gt;
-         &lt;ser:claims&gt;
-            &lt;xsd:claimURI&gt;http://wso2.org/claims/stateorprovince&lt;/xsd:claimURI&gt;
-            &lt;xsd:value&gt;western&lt;/xsd:value&gt;
-         &lt;/ser:claims&gt;
-         &lt;ser:claims&gt;
-            &lt;xsd:claimURI&gt;http://wso2.org/claims/mobile&lt;/xsd:claimURI&gt;
-            &lt;xsd:value&gt;0112729729&lt;/xsd:value&gt;
-         &lt;/ser:claims&gt;
-         &lt;ser:claims&gt;
-            &lt;xsd:claimURI&gt;http://wso2.org/claims/organization&lt;/xsd:claimURI&gt;
-            &lt;xsd:value&gt;WSO2 Inc&lt;/xsd:value&gt;
-         &lt;/ser:claims&gt;
-         &lt;ser:claims&gt;
-            &lt;xsd:claimURI&gt;http://wso2.org/claims/telephone&lt;/xsd:claimURI&gt;
-            &lt;xsd:value&gt;0913938894&lt;/xsd:value&gt;
-         &lt;/ser:claims&gt;
+            &lt;xsd:value&gt;golduser3{user_index}&lt;/xsd:value&gt;
+      &lt;/ser:claims&gt;
          &lt;ser:profileName&gt;default&lt;/ser:profileName&gt;
          &lt;ser:requirePasswordChange&gt;false&lt;/ser:requirePasswordChange&gt;
       &lt;/ser:addUser&gt;
@@ -235,7 +208,7 @@
         </ResultCollector>
         <hashTree/>
       </hashTree>
-      <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="Thread Group" enabled="true">
+      <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="Thread Group" enabled="false">
         <stringProp name="ThreadGroup.on_sample_error">continue</stringProp>
         <elementProp name="ThreadGroup.main_controller" elementType="LoopController" guiclass="LoopControlPanel" testclass="LoopController" testname="Loop Controller" enabled="true">
           <boolProp name="LoopController.continue_forever">false</boolProp>
@@ -424,7 +397,7 @@
         </ResultCollector>
         <hashTree/>
       </hashTree>
-      <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="Thread Group" enabled="true">
+      <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="Thread Group" enabled="false">
         <stringProp name="ThreadGroup.on_sample_error">continue</stringProp>
         <elementProp name="ThreadGroup.main_controller" elementType="LoopController" guiclass="LoopControlPanel" testclass="LoopController" testname="Loop Controller" enabled="true">
           <boolProp name="LoopController.continue_forever">false</boolProp>
@@ -613,7 +586,7 @@
         </ResultCollector>
         <hashTree/>
       </hashTree>
-      <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="Thread Group" enabled="true">
+      <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="Thread Group" enabled="false">
         <stringProp name="ThreadGroup.on_sample_error">continue</stringProp>
         <elementProp name="ThreadGroup.main_controller" elementType="LoopController" guiclass="LoopControlPanel" testclass="LoopController" testname="Loop Controller" enabled="true">
           <boolProp name="LoopController.continue_forever">false</boolProp>
@@ -802,6 +775,44 @@
         </ResultCollector>
         <hashTree/>
       </hashTree>
+      <ConfigTestElement guiclass="LdapConfigGui" testclass="ConfigTestElement" testname="LDAP Request Defaults" enabled="false">
+        <stringProp name="servername">172.31.16.71</stringProp>
+        <stringProp name="port">636</stringProp>
+        <stringProp name="rootdn">CN=Users,DC=wso2user,DC=com</stringProp>
+        <boolProp name="user_defined">true</boolProp>
+        <stringProp name="test">add</stringProp>
+        <stringProp name="base_entry_dn"></stringProp>
+        <elementProp name="arguments" elementType="Arguments" guiclass="ArgumentsPanel" testclass="Arguments" testname="User Defined Variables" enabled="true">
+          <collectionProp name="Arguments.arguments"/>
+        </elementProp>
+      </ConfigTestElement>
+      <hashTree/>
+      <ConfigTestElement guiclass="LdapExtConfigGui" testclass="ConfigTestElement" testname="LDAP Extended Request Defaults" enabled="false">
+        <stringProp name="servername"></stringProp>
+        <stringProp name="port"></stringProp>
+        <stringProp name="rootdn"></stringProp>
+        <stringProp name="scope">2</stringProp>
+        <stringProp name="countlimit"></stringProp>
+        <stringProp name="timelimit"></stringProp>
+        <stringProp name="attributes"></stringProp>
+        <stringProp name="return_object">false</stringProp>
+        <stringProp name="deref_aliases">false</stringProp>
+        <stringProp name="connection_timeout"></stringProp>
+        <stringProp name="parseflag">false</stringProp>
+        <stringProp name="secure">false</stringProp>
+        <stringProp name="user_dn"></stringProp>
+        <stringProp name="user_pw"></stringProp>
+        <stringProp name="comparedn"></stringProp>
+        <stringProp name="comparefilt"></stringProp>
+        <stringProp name="modddn"></stringProp>
+        <stringProp name="newdn"></stringProp>
+        <stringProp name="test">add</stringProp>
+        <stringProp name="base_entry_dn"></stringProp>
+        <elementProp name="arguments" elementType="Arguments" guiclass="ArgumentsPanel" testclass="Arguments" testname="User Defined Variables" enabled="true">
+          <collectionProp name="Arguments.arguments"/>
+        </elementProp>
+      </ConfigTestElement>
+      <hashTree/>
     </hashTree>
   </hashTree>
 </jmeterTestPlan>

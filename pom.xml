@@ -35,12 +35,12 @@
                         <!--<jMeterTestFile>passive-sts.jmx</jMeterTestFile>-->
                         <!--<jMeterTestFile>SAML2-SSO-RequestPath.jmx</jMeterTestFile>-->
                         <!--<jMeterTestFile>APPM/LoginTestPlan110.jmx</jMeterTestFile>-->
-                        <jMeterTestFile>APPM/LoginTestPlan.jmx</jMeterTestFile>
+                        <jMeterTestFile>goldman/authticationScript.jmx</jMeterTestFile>
                         <!--<jMeterTestFile>APPM/view-apps.jmx</jMeterTestFile>-->
                     </testFilesIncluded>
                     <resultsFileFormat>csv</resultsFileFormat>
                 </configuration>
-            </plugin>
+            </plugin>sudo wget -q -O /etc/apt/apt.conf.d/90nginx https://cs.nginx.com/static/files/90nginx
         </plugins>
     </build>
 
