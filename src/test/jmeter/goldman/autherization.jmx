@@ -30,7 +30,7 @@
           <collectionProp name="Arguments.arguments">
             <elementProp name="is.server.host" elementType="Argument">
               <stringProp name="Argument.name">is.server.host</stringProp>
-              <stringProp name="Argument.value">ec2-34-228-30-58.compute-1.amazonaws.com</stringProp>
+              <stringProp name="Argument.value">ec2-34-207-59-213.compute-1.amazonaws.com</stringProp>
               <stringProp name="Argument.metadata">=</stringProp>
             </elementProp>
           </collectionProp>
