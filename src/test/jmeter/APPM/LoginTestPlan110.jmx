@@ -927,7 +927,7 @@ if(&quot;null&quot;.equals(sessionId)){
               <connectTime>true</connectTime>
             </value>
           </objProp>
-          <stringProp name="filename">login110-5.jtl</stringProp>
+          <stringProp name="filename">loginwarmup.jtl</stringProp>
         </ResultCollector>
         <hashTree/>
         <ResultCollector guiclass="ViewResultsFullVisualizer" testclass="ResultCollector" testname="View Results Tree" enabled="false">
@@ -1984,7 +1984,7 @@ if(&quot;null&quot;.equals(sessionId)){
               <connectTime>true</connectTime>
             </value>
           </objProp>
-          <stringProp name="filename">login110-5.jtl</stringProp>
+          <stringProp name="filename">login.jtl</stringProp>
         </ResultCollector>
         <hashTree/>
         <ResultCollector guiclass="ViewResultsFullVisualizer" testclass="ResultCollector" testname="View Results Tree" enabled="false">
@@ -2023,7 +2023,7 @@ if(&quot;null&quot;.equals(sessionId)){
           <stringProp name="filename">/Users/dharshana/aludev/final/login110.jtl</stringProp>
         </ResultCollector>
         <hashTree/>
-        <ResultCollector guiclass="SummaryReport" testclass="ResultCollector" testname="Summary Report" enabled="true">
+        <ResultCollector guiclass="SummaryReport" testclass="ResultCollector" testname="Summary Report" enabled="false">
           <boolProp name="ResultCollector.error_logging">false</boolProp>
           <objProp>
             <name>saveConfig</name>
@@ -2059,7 +2059,7 @@ if(&quot;null&quot;.equals(sessionId)){
           <stringProp name="filename">SummaryReport5.csv</stringProp>
         </ResultCollector>
         <hashTree/>
-        <ResultCollector guiclass="ViewResultsFullVisualizer" testclass="ResultCollector" testname="View Results Tree" enabled="true">
+        <ResultCollector guiclass="ViewResultsFullVisualizer" testclass="ResultCollector" testname="View Results Tree" enabled="false">
           <boolProp name="ResultCollector.error_logging">false</boolProp>
           <objProp>
             <name>saveConfig</name>
@@ -2740,7 +2740,7 @@ manager.add(cookie);</stringProp>
           <stringProp name="filename">appvirw.jtl</stringProp>
         </ResultCollector>
         <hashTree/>
-        <ResultCollector guiclass="SummaryReport" testclass="ResultCollector" testname="Summary Report" enabled="true">
+        <ResultCollector guiclass="SummaryReport" testclass="ResultCollector" testname="Summary Report" enabled="false">
           <boolProp name="ResultCollector.error_logging">false</boolProp>
           <objProp>
             <name>saveConfig</name>
@@ -2776,7 +2776,7 @@ manager.add(cookie);</stringProp>
           <stringProp name="filename">/Users/dharshana/aludev/final/webapp/login110-2.jtl</stringProp>
         </ResultCollector>
         <hashTree/>
-        <ResultCollector guiclass="ViewResultsFullVisualizer" testclass="ResultCollector" testname="View Results Tree" enabled="true">
+        <ResultCollector guiclass="ViewResultsFullVisualizer" testclass="ResultCollector" testname="View Results Tree" enabled="false">
           <boolProp name="ResultCollector.error_logging">false</boolProp>
           <objProp>
             <name>saveConfig</name>
