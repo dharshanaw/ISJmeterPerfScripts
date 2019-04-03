@@ -42,7 +42,7 @@
             </elementProp>
             <elementProp name="adminNamePrefix" elementType="Argument">
               <stringProp name="Argument.name">adminNamePrefix</stringProp>
-              <stringProp name="Argument.value">admin003</stringProp>
+              <stringProp name="Argument.value">TestSpFor55</stringProp>
               <stringProp name="Argument.metadata">=</stringProp>
             </elementProp>
             <elementProp name="wso2url" elementType="Argument">
