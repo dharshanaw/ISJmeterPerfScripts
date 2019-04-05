@@ -42,7 +42,7 @@
             </elementProp>
             <elementProp name="adminNamePrefix" elementType="Argument">
               <stringProp name="Argument.name">adminNamePrefix</stringProp>
-              <stringProp name="Argument.value">TestSpFor55-2</stringProp>
+              <stringProp name="Argument.value">TestSpFor55-3</stringProp>
               <stringProp name="Argument.metadata">=</stringProp>
             </elementProp>
             <elementProp name="wso2url" elementType="Argument">
@@ -110,7 +110,7 @@
                 </elementProp>
                 <elementProp name="" elementType="Header">
                   <stringProp name="Header.name">Authorization</stringProp>
-                  <stringProp name="Header.value">Basic YWRtaW46YWRtaW4=</stringProp>
+                  <stringProp name="Header.value">Basic d3NvMmFkbWluOndzbzJhZG1pbg==</stringProp>
                 </elementProp>
               </collectionProp>
             </HeaderManager>
