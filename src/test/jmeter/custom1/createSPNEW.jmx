@@ -15,14 +15,14 @@
         <stringProp name="ThreadGroup.on_sample_error_continue">continue</stringProp>
         <elementProp name="ThreadGroup.main_controller" elementType="LoopController" guiclass="LoopControlPanel" testclass="LoopController" testname="Loop Controller" enabled="true">
           <boolProp name="LoopController.continue_forever">false</boolProp>
-          <stringProp name="LoopController.loops">10000</stringProp>
+          <intProp name="LoopController.loops">-1</intProp>
         </elementProp>
         <stringProp name="ThreadGroup.num_threads">100</stringProp>
         <stringProp name="ThreadGroup.ramp_time">10</stringProp>
         <longProp name="ThreadGroup.start_time">1496049626000</longProp>
         <longProp name="ThreadGroup.end_time">1496049626000</longProp>
-        <boolProp name="ThreadGroup.scheduler">false</boolProp>
-        <stringProp name="ThreadGroup.duration"></stringProp>
+        <boolProp name="ThreadGroup.scheduler">true</boolProp>
+        <stringProp name="ThreadGroup.duration">3600</stringProp>
         <stringProp name="ThreadGroup.delay"></stringProp>
         <stringProp name="ThreadGroup.on_sample_error">continue</stringProp>
       </ThreadGroup>
@@ -42,7 +42,7 @@
             </elementProp>
             <elementProp name="adminNamePrefix" elementType="Argument">
               <stringProp name="Argument.name">adminNamePrefix</stringProp>
-              <stringProp name="Argument.value">TestSpFor55</stringProp>
+              <stringProp name="Argument.value">TestSpFor55-2</stringProp>
               <stringProp name="Argument.metadata">=</stringProp>
             </elementProp>
             <elementProp name="wso2url" elementType="Argument">
@@ -300,7 +300,7 @@ out.write(System.getProperty(&quot;line.separator&quot;));
                 <connectTime>true</connectTime>
               </value>
             </objProp>
-            <stringProp name="filename">Resultst-createSp.jtl</stringProp>
+            <stringProp name="filename">Resultst-createSpin2.jtl</stringProp>
           </ResultCollector>
           <hashTree/>
         </hashTree>
