@@ -36,13 +36,13 @@
             </elementProp>
             <elementProp name="userNamePrefix" elementType="Argument">
               <stringProp name="Argument.name">userNamePrefix</stringProp>
-              <stringProp name="Argument.value">user002</stringProp>
+              <stringProp name="Argument.value">user004</stringProp>
               <stringProp name="Argument.metadata">=</stringProp>
               <stringProp name="Argument.desc">must be smaller than 64 charcters, must be all lowercase</stringProp>
             </elementProp>
             <elementProp name="adminNamePrefix" elementType="Argument">
               <stringProp name="Argument.name">adminNamePrefix</stringProp>
-              <stringProp name="Argument.value">TestSpFor55-3</stringProp>
+              <stringProp name="Argument.value">TestSpFor555</stringProp>
               <stringProp name="Argument.metadata">=</stringProp>
             </elementProp>
             <elementProp name="wso2url" elementType="Argument">
@@ -447,7 +447,7 @@ out.write(System.getProperty(&quot;line.separator&quot;));
           <stringProp name="filename">/apache-jmeter-3.3/hc2_sp_login.csv</stringProp>
         </ResultCollector>
         <hashTree/>
-        <ResultCollector guiclass="ViewResultsFullVisualizer" testclass="ResultCollector" testname="View Results Tree" enabled="false">
+        <ResultCollector guiclass="ViewResultsFullVisualizer" testclass="ResultCollector" testname="View Results Tree" enabled="true">
           <boolProp name="ResultCollector.error_logging">false</boolProp>
           <objProp>
             <name>saveConfig</name>
